@@ -67,8 +67,8 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: jekyller
-repo: jasper2
+username: King-Otaku
+repo: King-Otaku
 branch: master
 relative_source: ../jasper2/
 destination: ../jasper2-pages/
