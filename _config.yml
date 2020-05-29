@@ -11,7 +11,7 @@ baseurl: ''
 # Website info
 title: An Sung-Hyun's Portfolio
 description: Record of Projects and Learning
-cover: assets/images/blog-cover.jpg
+cover: assets/images/blog-cover.png
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
