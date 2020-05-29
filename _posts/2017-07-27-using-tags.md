@@ -14,8 +14,8 @@ author:  An Sung-Hyun
 
 <p>[JAVA] Rhythm Game, Tune Of Heart </p>
 <p>It is a rhythm game based on Java and it is implemented by utilizing all basic Java technology.</p>
-<h2 id="basictagging">Basic tagging</h2>
-<p>When you write a post, you can assign tags to help differentiate between categories of content. For example, you might tag some posts with <code>News</code> and other posts with <code>Cycling</code>, which would create two distinct categories of content listed on <code>/tag/news/</code> and <code>/tag/cycling/</code>, respectively.</p>
+<h2 id="Database">Database</h2>
+<p>The database basically has member information and CD key information. Through this, members' personal information, scores, and records will be managed, and Java will link them through certain Java classes.</p>
 <p>If you tag a post with both <code>News</code> <em>and</em> <code>Cycling</code> - then it appears in both sections.</p>
 <p>Tag archives are like dedicated home-pages for each category of content that you have. They have their own pages, their own RSS feeds, and can support their own cover images and meta data.</p>
 <h2 id="theprimarytag">The primary tag</h2>
