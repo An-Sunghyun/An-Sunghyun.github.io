@@ -8,7 +8,7 @@ date: 2017-07-27 08:00:00
 tags: [Rhythm game]
 class: post-template
 subclass: 'post'
-author:  An Sung-Hyun
+author: An Sung-Hyun
 ---
 
 
