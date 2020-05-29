@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/rhythm game main.jpg
 navigation: True
 title: Tune Of Heart
-date: 2017-07-27 08:00:00
+date: 2019-11-02 08:00:00
 tags: [Rhythm game]
 class: post-template
 subclass: 'post'
