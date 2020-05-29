@@ -12,7 +12,7 @@ author: An Sung-Hyun
 ---
 
 
-<p>[JAVA] Rhythm Game, Tune Of Heart </p>
+<p>[JAVA] Rhythm Game, Tune Of Heart</p>
 <p>It is a rhythm game based on Java and it is implemented by utilizing all basic Java technology.</p>
 <h2 id="Database">Database</h2>
 <p>The database basically has member information and CD key information. Through this, members' personal information, scores, and records will be managed, and Java will link them through certain Java classes.</p>
