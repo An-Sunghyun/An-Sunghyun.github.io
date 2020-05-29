@@ -9,8 +9,8 @@ words_per_minute: 200
 baseurl: ''
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: An Sung-Hyun's Portfolio
+description: Record of Projects and Learning
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
@@ -68,7 +68,7 @@ feed:
 safe: False
 lsi: False
 username: King-Otaku
-repo: King-Otaku
+repo: https://github.com/King-Otaku/King-Otaku.github.io
 branch: master
 relative_source: ../jasper2/
 destination: ../jasper2-pages/
