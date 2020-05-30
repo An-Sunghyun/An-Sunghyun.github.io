@@ -14,28 +14,16 @@ author: An Sung-Hyun
 
 <p>[JAVA] Rhythm Game, Tune Of Heart</p>
 <p>It is a rhythm game based on Java and it is implemented by utilizing all basic Java technology.</p>
-<h2 id="Database">Database</h2>
+<h2 id="Database"><mark>Database</mark></h2>
 <p>The database basically has member information and CD key information. Through this, members' personal information, scores, and records will be managed, and Java will link them through certain Java classes.</p>
 <p><img src="assets/images/rhythm-game-database.jpg" alt="Database img" /></p>
-<p></p>
-<h2 id="theprimarytag">The primary tag</h2>
-<p>Inside the Ghost editor, you can drag and drop tags into a specific order. The first tag in the list is always given the most importance, and some themes will only display the primary tag (the first tag in the list) by default. So you can add the most important tag which you want to show up in your theme, but also add a bunch of related tags which are less important.</p>
-<p><mark><strong>News</strong>, Cycling, Bart Stevens, Extreme Sports</mark></p>
-<p>In this example, <strong>News</strong> is the primary tag which will be displayed by the theme, but the post will also still receive all the other tags, and show up in their respective archives.</p>
-<h2 id="privatetags">Private tags</h2>
-<p>Sometimes you may want to assign a post a specific tag, but you don't necessarily want that tag appearing in the theme or creating an archive page. In Ghost, hashtags are private and can be used for special styling.</p>
-<p>For example, if you sometimes publish posts with video content - you might want your theme to adapt and get rid of the sidebar for these posts, to give more space for an embedded video to fill the screen. In this case, you could use private tags to tell your theme what to do.</p>
-<p><mark><strong>News</strong>, Cycling, #video</mark></p>
-<p>Here, the theme would assign the post publicly displayed tags of <code>News</code>, and <code>Cycling</code> - but it would also keep a private record of the post being tagged with <code>#video</code>.</p>
-<p>In your theme, you could then look for private tags conditionally and give them special formatting:</p>
-{% raw %}
-<pre><code class="nohighlight">{{#post}}
-    {{#has tag=&quot;#video&quot;}}
-        ...markup for a nice big video post layout...
-    {{else}}
-        ...regular markup for a post...
-    {{/has}}
-{{/post}}
-</code></pre>
-<p>You can find documentation for theme development techniques like this and many more over on Ghost's extensive <a href="https://themes.ghost.org/">theme documentation</a>.</p>
-{% endraw %}
+<p>The database implements basic community functions such as genuine registration, login, and membership.</p>
+<h2 id="main frame"><mark>Main Frame</mark></h2>
+<p><img src="assets/images/rhythm-game-mainpost.jpg" alt="rhythm game main img" /></p>
+<p>On the main screen, there are start and end buttons, and when you click the start button, you will be moved to the song selection screen.</p>
+<h2 id="selection frame"><mark>Selection Frame</mark></h2>
+<p><img src="assets/images/rhythm-game-selection.jpg" alt="rhythm game selection img" /></p>
+<p>On the song selection screen, the corresponding song is automatically played and the song can be switched by pressing the arrow button.</p>
+<h2 id="play frame"><mark>Playing Frame</mark></h2>
+<p><img src="assets/images/rhythm-game-play.jpg" alt="rhythm game play img" /></p>
+<p>On the play screen, when the button is pressed according to the timing, the note is judged through event processing.</p>
