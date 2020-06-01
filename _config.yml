@@ -16,23 +16,21 @@ logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: King-Otaku
-disqus_url: amoremimir13@gmail.com
-disqus_id: disqus_tbMNSPS0wS
 
 # Social info
 navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: https://twitter.com/HKtH3sMCVQhO6rb
-facebook: https://facebook.com/swanm13
+twitter: HKtH3sMCVQhO6rb
+facebook: swanm13
 
 # Disqus
 disqus: True
 disqus_shortname: disqus_tbMNSPS0wS
 
 # Google Analytics
-google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+google_analytics: UA-168144598-1
 
 # Permalinks
 permalink: /:title
