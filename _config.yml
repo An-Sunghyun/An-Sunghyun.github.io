@@ -28,8 +28,8 @@ twitter: https://twitter.com/HKtH3sMCVQhO6rb
 facebook: https://facebook.com/swanm13
 
 # Disqus
-disqus: False
-disqus_shortname: jekyller # replace with your disqus username
+disqus: True
+disqus_shortname: disqus_tbMNSPS0wS
 
 # Google Analytics
 google_analytics: UA-69281367-1 # replace with your GA tracking identifier
