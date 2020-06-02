@@ -1,6 +1,6 @@
 ---
 layout: page
-current: about
+current: /about
 title: About
 navigation: true
 logo: 'assets/images/An Sung-Hyun.png'
