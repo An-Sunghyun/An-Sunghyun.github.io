@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/cook-main.png
+cover:  assets/images/quiz-select-mode.png
 navigation: True
 title: Common Sense Quiz
 date: 2020-12-30 08:00:00
@@ -12,30 +12,129 @@ author: An Sung-Hyun
 ---
 
 
-<p>[MobileApp] Today's Cook</p>
-<p>Sites where you can search for recipes through your current ingredients or get menu recommendations through fragmentary conditions for what you want to eat.</p>
-<p>In addition, you can search for detailed information about each food.</p>
-<h2 id="Front Panel"><mark>Front Panel</mark></h2>
-<p></p>
-<p><img src="assets/images/sf-front.jpg" alt="Front Panel img" /></p>
-<p></p>
-
-<h2 id="Block Diagram"><mark>Block Diagram</mark></h2>
-<p><img src="assets/images/sf-blockdiagram.jpg" alt="blockdiagram img" /></p>
-<p></p>
-<strong><mark>Functions</mark></strong>
+<p>[MobileApp] Soft Brain Training</p>
+<p>Developed to improve the unorganized nature of quiz applications which have different fields or difficulty levels.</p>
+<h2 id="Purpose"><mark>Purpose of project development</mark></h2>
+<p><img src="assets/images/quiz-select-mode.png" alt="select mode" /></p>
 <ul>
-  <li>Distance Measurement</li>
-  <li>Hazard Classification</li>
-  <li>Warning Tone Output</li>
-  <li>Warning Statment Output</li>
-  <li>Vibration function</li>
+  <li>The purpose is to take both learning and fun.</li>
+  <li>Common sense and many other problems are required regardless of field (except math problems including religion, science, etc.)</li>
+  <li>Used for various purposes, such as playing drinking games or building knowledge</li>
+  <li>Requires leveling, stages, difficulty functions, etc. by borrowing systems from existing puzzle games</li>
+  <li>Need supplementary means, such as hint items</li>
+  <li>All existing games are mixed with too many genres and are not common sense. You can select the genre you want, select intensively, and learn step-by-step from common sense to knowledge and experience.</li>
 </ul>
-<p></p>
 
-<h2 id="Result"><mark>Result</mark></h2>
-<p><img src="assets/images/sf-result.png" alt="result img" /></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<h2 id="Existing App"><mark>Problems with existing apps</mark></h2>
+<p><img src="assets/images/quiz-existing.png" alt="existing quiz app" /></p>
+<ul>
+  <li>All existing games are mixed with too many genres and are not common sense.</li>
+  <li>UI design is not clear and content is not varied</li>
+  <li>Applications with descriptions often have unnecessarily long explanations</li>
+  <li>Overall, the design of the picture and button is not sincere</li>
+  <li>Quiz-related images often do not express the problem properly.</li>
+  <li>Poor gaming performance due to poor quality and detailed functionality overall (visual/audible effects of correct/wrong answers, buttons and problem designs, etc.)</li>
+  <li>Advertisements are constantly pop-up during game play, hurting the game's of the game.</li>
+  <li>'common sense' often not a common sense problem</li>
+</ul>
+
+<h2 id="Differentiation"><mark>Differentiation and Improvement Plan</mark></h2>
+<ul>
+  <li>It does not mix common sense in a wide variety of fields, but it also addresses field-specific issues to focus on learning knowledge about areas of interest.</li>
+  <li>Customized education is provided by dividing the difficulty level without generalization under the name of common sense.</li>
+  <li>Handle truly 'common sense' issues unlike previous applications</li>
+  <li>Select intuitive and familiar designs with maximum care (User-Friendly)</li>
+  <li>Audible/visual effects are provided when certain events occur, such as correct/wrong answers, to facilitate distinguishing.</li>
+  <li>Problem description is divided into two parts, a summary and a detailed description, so that the user can choose.</li>
+  <li>Have ads pop up during the game and be printed on the screen in a small banner at all times to avoid interfering with the game.</li>
+</ul>
+
+<h2 id="Design and Function"><mark>Design and Function</mark></h2>
+<h3 id="Login">Login</h3>
+<p><img src="assets/images/quiz-login.png" alt="Quiz Login" /></p>
+<ul>
+  <li>Account: Log in with the information you entered when you joined the membership.</li>
+  <li>Login function: Link your own account or SNS account when you click Login (implement if possible)</li>
+  <li>Membership registration function: simple human information input and double check with existing accounts in the database</li>
+  <li>Guest login feature: Data is stored only on the device and all data is deleted when the application is deleted.</li>
+  <li>Change button design: When the mouse is raised, the design of the button changes to provide visual focus.</li>
+  <li>Google: Sign in with your Google account (implemented if possible)</li>
+  <li>Other SNS: Log in to the relevant SNS account (implemented if possible)</li>
+</ul>
+
+<h3 id="Register">Register</h3>
+<p><img src="assets/images/quiz-register.png" alt="Quiz Register" /></p>
+<ul>
+  <li>Provide ID, PASSWORD, Nickname and E-mail 4 simple information (edit text)</li>
+  <li>Register in database if ID and nickname are OK after duplicate check</li>
+</ul>
+
+<h3 id="Play">Play Frame</h3>
+<p><img src="assets/images/quiz-select-mode.png" alt="Quiz Play Frame" /></p>
+<ul>
+  <li>Screen to choose from three: Story mode, Challenge mode, and Study mode</li>
+  <li>Story mode: Stage format due to fixed problems (common sense level of difficulty increased by phase)</li>
+  <li>Challenge mode: Select field/difficulty level and time attack to solve problems. Problem questions are random</li>
+  <li>Learning mode: After selecting a field/difficulty level, it proceeds the same as the challenge mode, but not reflected in the ranking</li>
+</ul>
+
+<h3 id="Story Mode">Story Mode</h3>
+<p><img src="assets/images/quiz-story-mode.png" alt="Quiz Story Mode" /></p>
+<ul>
+  <li>Each difficulty consists of a total of 150 sample questions, 50 sample questions.</li>
+  <li>The next stage cannot be challenged unless the previous stage has been cleared</li>
+  <li>Each stage has a fixed problem and cannot be challenged again if it has already been cleared</li>
+  <li>Story mode cannot see the commentary</li>
+</ul>
+
+<h3 id="Challenge Mode">Challenge Mode</h3>
+<p><img src="assets/images/quiz-challenge-mode.png" alt="Quiz Challenge Mode" /></p>
+<ul>
+  <li>Select difficulty/sector</li>
+  <li>Difficulty level is common sense field. Phase 3 of upper, middle, low</li>
+  <li>Common sense problems are 50 by difficulty, a total of 150 questions.</li>
+  <li>In total, there are 10 fields, 20 questions for each field, and 200 questions for each field.</li>
+  <li>Fields: Philosophy, Religion, Psychology, Fourth Industrial Revolution, Computer Engineering, Presentation, Pure Science, Peripheral Instruments, New Cognitive Words)</li>
+  <li>Time limit present (time attack)</li>
+  <li>Time limit of 1 minute per question</li>
+  <li>Fail if you get even one question wrong</li>
+</ul>
+
+<h3 id="Study Mode">Study Mode</h3>
+<p><img src="assets/images/quiz-study-mode.png" alt="Quiz Study Mode" /></p>
+<p>Mostly the same as the challenge mode, but with no time limit and can view the commentary</p>
+
+<h3 id="Solving">Problem Solving Screen</h3>
+<p><img src="assets/images/quiz-solution.png" alt="Quiz Solution" /></p>
+<ul>
+  <li>Problem output (text view)</li>
+  <li>Selective Output (Radio Group – Radio Button)</li>
+  <li>multiple-choice problem</li>
+</ul>
+
+<h3 id="Problem description screen">Problem description screen</h3>
+<p><img src="assets/images/quiz-explanation.png" alt="Quiz Description" /></p>
+<ul>
+  <li>Change to green if correct answer is selected</li>
+  <li>Provides a summary version and detailed version of the description</li>
+  <li>1~2 lines for brief description and 1~10 lines for detailed explanation</li>
+  <li>If incorrect, change to red.</li>
+</ul>
+
+<h3 id="Profile">Profile</h3>
+<p><img src="assets/images/quiz-profile.png" alt="Quiz Profile" /></p>
+<p>Simple human information display (nickname, user unique number, current account level, number of questions solved so far, number of correct answers)</p>
+
+<h3 id="Ranking">Ranking</h3>
+<p><img src="assets/images/quiz-ranking.png" alt="Quiz Ranking" /></p>
+<ul>
+  <li>Ranking only printed to top 10</li>
+  <li>Sort the number of answers stored in the database in descending order, then print out the list of 10 people at the top</li>
+</ul>
+
+<h3 id="Select Area Screen">Select Area Screen</h3>
+<p><img src="assets/images/quiz-select-category.png" alt="Quiz Select Category" /></p>
+<ul>
+  <li>Choose one of the 10 areas to challenge</li>
+  <li>Features supported in Study/Challenge mode</li>
+</ul>
