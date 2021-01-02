@@ -34,53 +34,113 @@ author: An Sung-Hyun
 <p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
 
 <h3 id="Today Recommend">Today's Recommend</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<p><img src="assets/images/cook-recommend.jpg" alt="Cook Recommned img" /></p>
+<ol>
+<li>Today's recommended menu: Select one randomly from the menu and print out the information</li>
+<li>Today's recommended recipe: Select one randomly from the recipe and print out the information</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Main page bottom Button">Main Page Bottom Button</h3>
+<p><img src="assets/images/cook-button.jpg" alt="Cook button img" /></p>
+<ol>
+<li>Menu Recommendation Button: Go to Menu Search page</li>
+<li>Recommend recipe button: Go to the recipe search page</li>
+<li>Design: CSS is used to produce a reactive type. Apply Hover Effect</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Main page Search">Main Page Search</h3>
+<p><img src="assets/images/cook-food-search.jpg" alt="Cook food search img" /></p>
+<ol>
+<li>Write the name of the food correctly</li>
+<li>Go to the food search results page and print the results</li>
+<li>Search the database and print the name, unit calories, taste, and section information in the form of photos and tables.</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Menu Search">Menu Search</h3>
+<p><img src="assets/images/cook-menu-search.jpg" alt="Cook menu search img" /></p>
+<ol>
+<li>Conditions of selection are implemented as radio boxes (single selection)</li>
+<li>Go to the Menu Search Results page through the Submit button</li>
+<li>Insert the selected item as a variable value into the SQL statement and search the database</li>
+<li>Today's recommended menu/recipe information is displayed on the right side</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Recipe Search">Recipe Search</h3>
+<p><img src="assets/images/cook-recipe-search.jpg" alt="Cook recipe search img" /></p>
+<ol>
+<li>Implementation of selection conditions with check boxes (multiple selections, up to eight selections are limited)</li>
+<li>Use the Submit button to go to the recipe search results page.</li>
+<li>Insert the selected item as a variable value into the SQL statement and search the database</li>
+<li>Today's recommended menu/recipe information is displayed on the right side</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Food Search Result">Food Search Result</h3>
+<p><img src="assets/images/cook-food-search-result.jpg" alt="Cook food search result img" /></p>
+<ol>
+<li>Information about the food searched</li>
+<li>Information on food names, calories per unit, taste, and large category is displayed.</li>
+<li>Information is expressed in a table format.</li>
+<li>Printed with photos for visual effects</li>
+<li>Today's recommended menu/recipe information is displayed on the right side.</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Menu Search Result">Menu Search Result</h3>
+<p><img src="assets/images/cook-menu-search-result.jpg" alt="Cook menu search result img" /></p>
+<ol>
+<li>Search the database via SQL statements using the conditions entered on the Menu Search page.</li>
+<li>Select up to three results that meet the conditions and print them out in the form of a card title.</li>
+<li>At the bottom, go to the relevant search page through the menu re-search and recipe re-search buttons.</li>
+</ol>
 
-<h3 id="Main page">Main Page</h3>
-<p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
-<p></p>
+<h3 id="Recipe Search Result">Recipe Search Result</h3>
+<p><img src="assets/images/cook-recipe-search-result.jpg" alt="Cook recipe search result img" /></p>
+<ol>
+<li>Search the database via SQL statements using the conditions entered on the Recipe Search page.</li>
+<li>Select up to three results that meet the conditions and print them out in the form of a card title.</li>
+<li>In the recipe results, click on the results and link them to the recipe site related to the dish.</li>
+<li>Go to the search page at the bottom through the 'Rescan Menu' and 'Rescan Recreate Recipe' buttons</li>
+</ol>
 
-<h2 id="Block Diagram"><mark>Block Diagram</mark></h2>
-<p><img src="assets/images/sf-blockdiagram.jpg" alt="blockdiagram img" /></p>
-<p></p>
-<strong><mark>Functions</mark></strong>
-<ul>
-  <li>Distance Measurement</li>
-  <li>Hazard Classification</li>
-  <li>Warning Tone Output</li>
-  <li>Warning Statment Output</li>
-  <li>Vibration function</li>
-</ul>
-<p></p>
+<h2 id="Backend"><mark>Backend</mark></h2>
+<h3 id="Search Func Backend">Search Function</h3>
+<ol>
+<li>Enter the name of the food you want to search for in the search window on the main page and click the Enter or Submit button.</li>
+<li>Invoke the corresponding Result Servlet as the event occurred</li>
+<li>Servlet extracts the name of food entered in the search box with data and calls DAO through Service</li>
+<li>Request that the recalled DAO search the database for the name of the food received as data in SQL statements.</li>
+<li>If data of that food name exists in the database, the database sends it to DAO.</li>
+<li>Return transmitted food data to a servlet by storing it in the DAO's list using ArrayList</li>
+<li>Visualize search results by invoking the results screen JSP for the function that corresponds with the returned list</li>
+</ol>
 
-<h2 id="Result"><mark>Result</mark></h2>
-<p><img src="assets/images/sf-result.png" alt="result img" /></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<h3 id="Menu Search Recommend Function">Menu Search Recommend Function</h3>
+<ol>
+<li>Go to the Select Menu Recommendation Criteria page through the menu recommendation button, etc.</li>
+<li>Select a filter through the radio button and click the search button</li>
+<li>Invoke the corresponding MenuResult Servlet as an event occurred</li>
+<li>The servlet extracts data from selected conditions and calls the DAO through the service.</li>
+<li>Request the database to search for conditions received by the invoked DAO in SQL statements</li>
+<li>If data corresponding to the conditional data exists in the database, the database sends it to DAO.</li>
+<li>Data received is stored in the DAO's ArrayList list and returned as a servlet</li>
+<li>Visualize search results by invoking the results screen JSP of the function that corresponds to the returned list.</li>
+</ol>
+
+<h3 id="Recipe Search Recommend Function">Recipe Search Recommend Function</h3>
+<ol>
+<li>Go to the Select Recipe Recommendation Criteria page through the recipe recommendation button, etc.</li>
+<li>Select duplicate selections (up to 8) for Checkbox and click the Search button.</li>
+<li>Invoke the corresponding RecipeResult Servlet as an event occurred</li>
+<li>The servlet extracts data from selected conditions and calls the DAO through the service.</li>
+<li>Request the database to search for conditions received by the invoked DAO in SQL statements</li>
+<li>If the data corresponding to the conditional data resides in the database, the database sends it to DAO.</li>
+<li>Data received is stored in the DAO's ArrayList list and returned as a servlet</li>
+<li>Visualize search results by invoking the results screen JSP of the function that corresponds to the returned list.</li>
+</ol>
+
+<h3 id="Todays Recommend Function">Today's Recommend Function</h3>
+<ol>
+<li>When the main page opens, back-end automatically requests a random search and transfer of one menu/recipe data from the database.</li>
+<li>Transferring menus/rescriptions from the database to the backend one by one</li>
+<li>Store data sent in a back-end, ArrayList-enabled list, and time-racked data</li>
+<li>On each page with today's recommended card side, data stored in the list is inserted as a result to visualize the results.</li>
+</ol>
