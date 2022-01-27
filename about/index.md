@@ -3,7 +3,7 @@ layout: page
 current: about
 title: About
 navigation: true
-logo: 'assets/images/blog-cover.png'
+logo: 'assets/images/blog-cover.jpg'
 class: page-template
 subclass: 'post page'
 ---
