@@ -13,28 +13,19 @@ author: An Sung-Hyun
 
 
 <p>[Thesis] Exploratory research based on big data for Improving the revisit rate of foreign tourists and invigorating consumption</p>
-<p>Tensorflow was used for deep learning.</p>
-<h2 id="Purpose"><mark>Tensorflow Result</mark></h2>
-<h3 id="VGG16">VGG-16</h3>
-<p><img src="assets/images/VGG16.png" width = "400" alt="VGG-16" /></p>
-<h3 id="Densenet121">Densenet-121</h3>
-<p><img src="assets/images/Densenet121.jpg" width = "400" alt="Densenet-121" /></p>
-<h3 id="Densenet201">Densenet-201</h3>
-<p><img src="assets/images/Densenet201.jpg" width = "400" alt="Densenet201" /></p>
-<h3 id="Resnet50">Resnet 50</h3>
-<p><img src="assets/images/Resnet50.png" width = "400" alt="Resnet50" /></p>
-<h3 id="Resnet101">Resnet 101</h3>
-<p><img src="assets/images/Resnet101.jpg" width = "400" alt="Resnet101" /></p>
-
+<p>Rstudio was used for this thesis</p>
+<h2 id="Problem Definition"><mark>Problem Definition</mark></h2>
+<p>Satisfaction cannot always be high when foreign tourists eat at a restaurant that Koreans like. This is because there are differences in individual tendencies and cultures. If so, I think it will greatly increase satisfaction and improve convenience if you can guide them to a restaurant that fits their tendencies in public and universally and recognized by Koreans. Therefore, the problem of this study is to be defined as "how to find and utilize the commonalities of restaurants that foreigners and Koreans think of."</p>
 
 <h2 id="Data Set"><mark>Data Set</mark></h2>
-<p><img src="assets/images/Dataset.png" alt="Dataset Example" /></p>
-<p>I used commonly used datasets for the development of sentiment analyzers. The FER-2013 Faces Database. They are approximately 29000 image data, 48x48 size and classified into seven emotions. But One emotion, disgust, has not enough images so I decided to exclude it and train AI. This is because I heard that imbalance in datasets affects accuracy.
-However, We go through the pre-process of resizing and arranging data for easy learning. Furthermore, image augmentation (zoom_range = 0.2, horizontal_flip=True, shear_range=0.2) is applied so that arbitrary data can be clearly classified.</p>
+<h3 id="Review Tripadvisor">TripAdvisor</h3>
+<p><img src="assets/images/review_tripadvisor.png"  width = "800" alt="Dataset Example" /></p>
+<h3 id="Review Naver">Naver</h3>
+<p><img src="assets/images/review_naver.png"  width = "800" alt="Dataset Example" /></p>
+<p>In order to analyze the commonalities between the restaurants that foreigners like and the restaurants that Koreans like, it was first necessary to comment on the national site of foreigners who finished sightseeing. To this end, foreign restaurant reviews were collected using a review site called Tripadvisor, and Korean reviews were collected from Naver, the most commonly used search engine in Korea. It is necessary to analyze this data to find information on foods and restaurants that foreigners and Koreans are satisfied with.</p>
 
-<h2 id="Face Detection"><mark>Face Detection</mark></h2>
-<p><img src="assets/images/FaceDetection.jpg" alt="Dataset Example" /></p>
-<p>I used OpenCV library to recognize faces. I just added a little code to extract the face coordinates.</p>
+<h2 id="Analysis Techniques"><mark>Analysis techniques for deriving information</mark></h2>
+<p>In order to find out the preferred food and taste from the previously collected data, important words were extracted through latent Dirichlet allocation (LDA) analysis and classified by related topics to derive results. In addition, additional text mining was conducted to find restaurants or food preferred by both Koreans and foreigners, and this was supplemented by the circular graph of visualization and the word cloud. Analysis first collects raw data and purifies it to enable analysis through preprocessing. Thereafter, desired information is calculated through LDA analysis and text mining using the analysis tool(RStudio)</p>
 
 <h2 id="Demonstration View in Python"><mark>Demonstration View in Python</mark></h2>
 <p><img src="assets/images/Demonstration.png" alt="Demonstration Image" /></p>
