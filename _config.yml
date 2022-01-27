@@ -11,7 +11,7 @@ baseurl: ''
 # Website info
 title: An Sung-Hyun's Portfolio
 description: An Sung-Hyun's Portfolio
-cover: assets/images/blog-cover.png
+cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
