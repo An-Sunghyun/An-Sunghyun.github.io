@@ -1,0 +1,47 @@
+---
+layout: post
+current: post
+cover:  assets/images/quiz-main-cover.png
+navigation: True
+title: Comparison of deep learning models and development of web services for emotional analysis
+date: 2021-07-30 08:00:00
+tags: [Thesis]
+class: post-template
+subclass: 'post'
+author: An Sung-Hyun
+---
+
+
+<p>[Thesis] Comparison of deep learning models and development of web services for emotional analysis</p>
+<p>Tensorflow was used for deep learning.</p>
+<h2 id="Purpose"><mark>Tensorflow Result</mark></h2>
+<h3 id="VGG16">VGG-16</h3>
+<p><img src="assets/images/VGG16.png" width = "400" alt="VGG-16" /></p>
+<h3 id="Densenet121">Densenet-121</h3>
+<p><img src="assets/images/Densenet121.jpg" width = "400" alt="Densenet-121" /></p>
+<h3 id="Densenet201">Densenet-201</h3>
+<p><img src="assets/images/Densenet201.jpg" width = "400" alt="Densenet201" /></p>
+<h3 id="Resnet50">Resnet 50</h3>
+<p><img src="assets/images/Resnet50.png" width = "400" alt="Resnet50" /></p>
+<h3 id="Resnet101">Resnet 101</h3>
+<p><img src="assets/images/Resnet101.jpg" width = "400" alt="Resnet101" /></p>
+
+
+<h2 id="Data Set"><mark>Data Set</mark></h2>
+<p><img src="assets/images/Dataset.png" alt="Dataset Example" /></p>
+<p>I used commonly used datasets for the development of sentiment analyzers. The FER-2013 Faces Database. They are approximately 29000 image data, 48x48 size and classified into seven emotions. But One emotion, disgust, has not enough images so I decided to exclude it and train AI. This is because I heard that imbalance in datasets affects accuracy.
+However, We go through the pre-process of resizing and arranging data for easy learning. Furthermore, image augmentation (zoom_range = 0.2, horizontal_flip=True, shear_range=0.2) is applied so that arbitrary data can be clearly classified.</p>
+
+<h2 id="Face Detection"><mark>Face Detection</mark></h2>
+<p><img src="assets/images/FaceDetection.jpg" alt="Dataset Example" /></p>
+<p>I used OpenCV library to recognize faces. I just added a little code to extract the face coordinates.</p>
+
+<h2 id="Demonstration View in Python"><mark>Demonstration View in Python</mark></h2>
+<p><img src="assets/images/Demonstration.png" alt="Demonstration Image" /></p>
+<p>The above photo shows the analysis result and photo printed in a Python environment in a softmax manner.</p>
+
+<h2 id="Conclusion"><mark>Conclusion</mark></h2>
+<p>Deep learning models implemented by tensorflow have a canonical graph, but pytorch has not. I think input shape is the main reason why pytorch didn't work properly.
+I can set input shape with tensorflow, but pytorch can't. I gathered 48X48 image data and I could set tensorflow's input shape as 48X48. But I couldn't set pytorch's
+input shape so I had no choice but to train model with 256x256 size. The data I have is 48X48, but the input shape was 256X256, so I think it cannot have been learned properly.
+VGG-16 was the best result with 89% validation acc. However, it is hard to conclude that it is the best because it is a narrow gap with densenet and resnet.</p>
