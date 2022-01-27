@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/Demonstration-cover.jpg
+cover:  assets/images/korean-word-cloud.png
 navigation: True
 title: Exploratory research based on big data for Improving the revisit rate of foreign tourists and invigorating consumption
 date: 2020-12-31 08:00:00
@@ -26,13 +26,26 @@ author: An Sung-Hyun
 
 <h2 id="Analysis Techniques"><mark>Analysis techniques for deriving information</mark></h2>
 <p>In order to find out the preferred food and taste from the previously collected data, important words were extracted through latent Dirichlet allocation (LDA) analysis and classified by related topics to derive results. In addition, additional text mining was conducted to find restaurants or food preferred by both Koreans and foreigners, and this was supplemented by the circular graph of visualization and the word cloud. Analysis first collects raw data and purifies it to enable analysis through preprocessing. Thereafter, desired information is calculated through LDA analysis and text mining using the analysis tool(RStudio)</p>
-
-<h2 id="Demonstration View in Python"><mark>Demonstration View in Python</mark></h2>
-<p><img src="assets/images/Demonstration.png" alt="Demonstration Image" /></p>
-<p>The above photo shows the analysis result and photo printed in a Python environment in a softmax manner.</p>
+<h3 id="foreigner-lda1">Foreigner-LDA1</h3>
+<p><img src="assets/images/foreigner-lda1.png"  width = "800" alt="foreigner-lda1" /></p>
+<h3 id="foreigner-lda1">Foreigner-LDA2</h3>
+<p><img src="assets/images/foreigner-lda2.png"  width = "800" alt="foreigner-lda2" /></p>
+<h3 id="foreigner-lda1">Foreigner-LDA3</h3>
+<p><img src="assets/images/foreigner-lda3.png"  width = "800" alt="foreigner-lda3" /></p>
+<h3 id="foreigner-lda1">Korean-LDA1</h3>
+<p><img src="assets/images/korean-lda1.png"  width = "800" alt="korean-lda1" /></p>
+<h3 id="foreigner-lda1">Korean-LDA2</h3>
+<p><img src="assets/images/korean-lda2.png"  width = "800" alt="korean-lda2" /></p>
+<h3 id="foreigner-lda1">Korean-LDA3</h3>
+<p><img src="assets/images/korean-lda3.png"  width = "800" alt="korean-lda3" /></p>
+<br/>
+<p>According to the LDA topic results, Koreans have a wide variety of types of food they enjoy and use a clear name for the ingredients. Through this, it was also confirmed that the local people knew better about their own food. In addition to the LDA analysis, additional text mining was conducted for Korean and foreign reviews, and visualization was also conducted with word clouds and circular graphs. Visualization data are as follows.</p>
+<h3 id="Foreigner Review Pie Graph">Foreigner Review Pie Graph</h3>
+<p><img src="assets/images/foreigner-pie-graph.png"  width = "800" alt="foreigner-pie-graph" /></p>
+<h3 id="Korean Review Pie Graph">Korean Review Pie Graph</h3>
+<p><img src="assets/images/korean-pie-graph.png"  width = "800" alt="korean-pie-graph" /></p>
+<h3 id="Korean Review Word Cloud">Korean Review Word Cloud</h3>
+<p><img src="assets/images/korean-word-cloud.png"  width = "800" alt="korean-word-cloud" /></p>
 
 <h2 id="Conclusion"><mark>Conclusion</mark></h2>
-<p>Deep learning models implemented by tensorflow have a canonical graph, but pytorch has not. I think input shape is the main reason why pytorch didn't work properly.
-I can set input shape with tensorflow, but pytorch can't. I gathered 48X48 image data and I could set tensorflow's input shape as 48X48. But I couldn't set pytorch's
-input shape so I had no choice but to train model with 256x256 size. The data I have is 48X48, but the input shape was 256X256, so I think it cannot have been learned properly.
-VGG-16 was the best result with 89% validation acc. However, it is hard to conclude that it is the best because it is a narrow gap with densenet and resnet.</p>
+<p>Through the above analysis, it can be seen that foreigners are also interested in meat, seafood, and traditional foods like Koreans and are highly satisfied. Through this, we propose a restaurant recommendation system that can make sightseeing more enjoyable for foreigners who enjoy sightseeing through the commonalities of restaurants and foods that are well-received by both foreigners and Koreans.</p>
