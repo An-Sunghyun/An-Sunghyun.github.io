@@ -17,16 +17,16 @@ author: An Sung-Hyun
 <p>업무 : 팀장 업무(스케쥴링, 업무분장 등), LGBM(머신러닝)을 활용한 관광 요인 및 재방문 요인 도출, 신뢰도 검정</p>
 </br>
 
-<h2 id="Dataset"><mark>사용 데이터 셋</mark></h2>
+<h3 id="Dataset"><mark>사용 데이터 셋</mark></h3>
 <p><img src="assets/images/attract-dataset.png" width = "800" alt="데이터셋 목록표" /></p>
 <p>공공기관에서 제공하는 공공데이터 활용</p>
 <br/>
 
-<h2 id="Dataset"><mark>프로젝트 진행 절차</mark></h2>
+<h3 id="Dataset"><mark>프로젝트 진행 절차</mark></h3>
 <p><img src="assets/images/attract-process.png" width = "800" alt="진행 절차 도식화" /></p>
 <br/>
 
-<h2 id="cronbach"><mark>신뢰도 검정</mark></h2>
+<h3 id="cronbach"><mark>신뢰도 검정</mark></h3>
 <p><img src="assets/images/신뢰도검정1.jpg" width = "800" alt="신뢰도 검정 데이터 전처리" /></p>
 <p>필요한 열들(분석 및 러신머닝에 사용될 컬럼)만 추출한 후 하나의 데이터 프레임으로 병합. 이상치 및 결측치 처리</p>
 <br/>
@@ -39,7 +39,7 @@ author: An Sung-Hyun
 <p>크론바흐 알파 계수가 0.86으로 상당히 높은 신뢰도라고 할 수 있음</p>
 <br/>
 
-<h2 id="cronbach"><mark>EDA(탐색적 데이터 분석)</mark></h2>
+<h3 id="cronbach"><mark>EDA(탐색적 데이터 분석)</mark></h3>
 <p><img src="assets/images/EDA-datapreprocess.jpg" width = "800" alt="EDA 전처리" /></p>
 <p>1차원적인 데이터 분석 및 시각화를 위한 전처리 과정. 필요한 열만 추출한 후 이상치, 결측치 처리. 그 이후 그룹 별 카운팅</p>
 <br/>
@@ -49,7 +49,7 @@ author: An Sung-Hyun
 <p>Plotly 라이브러리를 활용하여 대화형 시각화</p>
 <br/>
 
-<h2 id="LGBM"><mark>LGBM(머신러닝)</mark></h2>
+<h3 id="LGBM"><mark>LGBM(머신러닝)</mark></h3>
 <p>LGBM은 머신러닝의 일종으로 빠른 처리속도가 특징과 그만큼 쉽게 과적합되는 것이 특징인 모델</p>
 
 <p><img src="assets/images/LGBMpreprocess1.jpg" width = "800" alt="LGBM 데이터 전처리1" /></p>
@@ -80,7 +80,7 @@ author: An Sung-Hyun
 <p>도합 12개 모델의 결과를 요약</p>
 <br/>
 
-<h2 id="TimeSeries"><mark>시계열 분석</mark></h2>
+<h3 id="TimeSeries"><mark>시계열 분석</mark></h3>
 <p>향후 외래관광객 추이를 파악하고 대략적인 관광객 수를 추측. 새롭게 제안할 정책/사업/서비스 등의 규모 설정에 결과를 활용할 수 있음</p>
 
 <p><img src="assets/images/Timeseries-model.jpg" width = "800" alt="시계열 모델 구축" /></p>
@@ -95,7 +95,7 @@ author: An Sung-Hyun
 <p>2022년 외래관광객 수는 대략 약 1847만 ±1093610명. 오차 범위 약 ±6</p>
 <br/>
 
-<h2 id="Project-Result"><mark>활용 방안</mark></h2>
+<h3 id="Project-Result"><mark>활용 방안</mark></h3>
 <p>위 단계들을 통해 관광 요인과 재방문 요인 모두 제일 영향력이 큰 요인이 '식도락 관광(맛집 탐방)'임을 알 수 있었음. 식도락 관광에 신규 사업/정책/서비스를 투자하는 것이 제일 효율적이라고 판단할 수 있음</p>
 
 <p><img src="assets/images/restaurantguide.png" width = "800" alt="공통 맛집 추천 시스템" /></p>
