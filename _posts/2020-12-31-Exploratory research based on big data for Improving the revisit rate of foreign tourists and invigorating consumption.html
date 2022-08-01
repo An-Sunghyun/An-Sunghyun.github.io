@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/korean-word-cloud.png
 navigation: True
-title: Exploratory research based on big data for Improving the revisit rate of foreign tourists and invigorating consumption
+title: 외국인 관광객 재방문율 향상과 소비 활성화를 위한 빅데이터 기반의 탐색적 연구
 date: 2020-12-31 08:00:00
 tags: [Thesis]
 class: post-template
@@ -12,21 +12,28 @@ author: An Sung-Hyun
 ---
 
 
-<p>[Thesis] Exploratory research based on big data for Improving the revisit rate of foreign tourists and invigorating consumption</p>
-<p>[DSIM, Journal of Industrial Convergence, 18(6), 19-25, 2020]</p>
-<p>Rstudio was used for this thesis</p>
-<h2 id="Problem Definition"><mark>Problem Definition</mark></h2>
-<p>Satisfaction cannot always be high when foreign tourists eat at a restaurant that Koreans like. This is because there are differences in individual tendencies and cultures. If so, I think it will greatly increase satisfaction and improve convenience if you can guide them to a restaurant that fits their tendencies in public and universally and recognized by Koreans. Therefore, the problem of this study is to be defined as "how to find and utilize the commonalities of restaurants that foreigners and Koreans think of."</p>
+<p>[논문] 『외국인 관광객 재방문율 향상과 소비활성화를 위한 빅데이터 기반의 탐색적 연구』</p>
+<p>[(사) 대한산업경영학회 산업융합연구 제 18권 제6호 pp.19~25]</p>
+<p>연구에는 Rstudio가 사용되었음</p>
+<h2 id="Problem Definition"><mark>문제 정의</mark></h2>
+<p>내국인이 좋아하는 식당에서 외국인 관광객이 식사를 할 때 만족도가 항상 높을 수는 없음. 개인의 성향과 문화에 차이가 있기 때문. 그렇다면 공공적으로나
+  보편적으로나 한국인들에게 인정받는 성향에 맞는 식당으로 안내해주면 만족도가 크게 높아지고 편의성도 크게 향상될 것이라 판다함. 따라서 본 연구의 문제는
+  '외국인과 내국인이 생각하는 식당의 공통점을 어떻게 찾아 활용할 것인가'로 규정되어야 함.</p>
 
-<h2 id="Data Set"><mark>Data Set</mark></h2>
+<h2 id="Data Set"><mark>데이터 셋</mark></h2>
 <h3 id="Review Tripadvisor">TripAdvisor</h3>
 <p><img src="assets/images/review_tripadvisor.png"  width = "800" alt="Dataset Example" /></p>
 <h3 id="Review Naver">Naver</h3>
 <p><img src="assets/images/review_naver.png"  width = "800" alt="Dataset Example" /></p>
-<p>In order to analyze the commonalities between the restaurants that foreigners like and the restaurants that Koreans like, it was first necessary to comment on the national site of foreigners who finished sightseeing. To this end, foreign restaurant reviews were collected using a review site called Tripadvisor, and Korean reviews were collected from Naver, the most commonly used search engine in Korea. It is necessary to analyze this data to find information on foods and restaurants that foreigners and Koreans are satisfied with.</p>
+<p>외국인들이 좋아하는 식당과 한국인이 좋아하는 식당의 공통점을 분석하기 위해서는 먼저 관광을 마친 외국인들이 자국에서 사용하는 식당 리뷰 사이트가 필요함.
+  이를 위해 트립어드바이저라는 리뷰 사이트를 이용하여 외국인의 한국 식당 리뷰를 수집하였으며, 한국에서 가장 많이 사용되는 검색 엔진인 네이버에서 한국어 리뷰를 수집함.
+  외국인과 내국인이 만족하는 음식점과 음식점에 대한 정보를 찾기 위해서 해당 자료를 활용.</p>
 
-<h2 id="Analysis Techniques"><mark>Analysis techniques for deriving information</mark></h2>
-<p>In order to find out the preferred food and taste from the previously collected data, important words were extracted through latent Dirichlet allocation (LDA) analysis and classified by related topics to derive results. In addition, additional text mining was conducted to find restaurants or food preferred by both Koreans and foreigners, and this was supplemented by the circular graph of visualization and the word cloud. Analysis first collects raw data and purifies it to enable analysis through preprocessing. Thereafter, desired information is calculated through LDA analysis and text mining using the analysis tool(RStudio)</p>
+<h2 id="Analysis Techniques"><mark>정보 도출을 위한 분석 기법</mark></h2>
+<p>기존에 수집한 데이터에서 선호하는 음식과 맛을 파악하기 위해 잠재 디리클레 할당(LDA) 분석을 통해 중요 단어를 추출하고 관련 주제별로 분류해 결과를 도출함.
+  이밖에도 내·외국인 모두가 선호하는 식당이나 음식을 찾기 위해 추가 텍스트 마이닝을 실시했으며 이를 원형 그래프와 워드 클라우드로 시각화 했음.
+  분석은 먼저 원시 데이터를 수집하고 정제하여 전처리를 통해 분석이 가능하도록 함. 이후 분석 툴(RS Studio)을 이용하여 LDA 분석과 텍스트 마이닝을
+  통해 원하는 정보를 산출함.</p>
 <h3 id="foreigner-lda1">Foreigner-LDA1</h3>
 <p><img src="assets/images/foreigner-lda1.png"  width = "800" alt="foreigner-lda1" /></p>
 <h3 id="foreigner-lda1">Foreigner-LDA2</h3>
@@ -40,7 +47,9 @@ author: An Sung-Hyun
 <h3 id="foreigner-lda1">Korean-LDA3</h3>
 <p><img src="assets/images/korean-lda3.png"  width = "800" alt="korean-lda3" /></p>
 <br/>
-<p>According to the LDA topic results, Koreans have a wide variety of types of food they enjoy and use a clear name for the ingredients. Through this, it was also confirmed that the local people knew better about their own food. In addition to the LDA analysis, additional text mining was conducted for Korean and foreign reviews, and visualization was also conducted with word clouds and circular graphs. Visualization data are as follows.</p>
+<p>LDA 결과에 따르면, 한국인들은 그들이 즐기는 음식의 종류가 매우 다양하고 재료의 명확한 이름을 사용한다는 특징이 있음.
+  이를 통해 현지인들이 자신의 음식에 대해 더 잘 알고 있다는 사실도 확인할 수 있었음. LDA 분석 외에도 국내외 리뷰에 대한 추가 텍스트 마이닝이 진행됐으며,
+  워드 클라우드와 원형 그래프로 시각화도 진행함. 시각화 데이터는 다음과 같음.</p>
 <h3 id="Foreigner Review Pie Graph">Foreigner Review Pie Graph</h3>
 <p><img src="assets/images/foreigner-pie-graph.png"  width = "800" alt="foreigner-pie-graph" /></p>
 <h3 id="Korean Review Pie Graph">Korean Review Pie Graph</h3>
@@ -48,9 +57,10 @@ author: An Sung-Hyun
 <h3 id="Korean Review Word Cloud">Korean Review Word Cloud</h3>
 <p><img src="assets/images/korean-word-cloud.png"  width = "800" alt="korean-word-cloud" /></p>
 
-<h2 id="Conclusion"><mark>Conclusion</mark></h2>
+<h2 id="Conclusion"><mark>결론</mark></h2>
 <br/>
-<p>Through the above analysis, it can be seen that foreigners are also interested in meat, seafood, and traditional foods like Koreans and are highly satisfied. Through this, we propose a restaurant recommendation system that can make sightseeing more enjoyable for foreigners who enjoy sightseeing through the commonalities of restaurants and foods that are well-received by both foreigners and Koreans.</p>
+<p>위의 분석을 통해 외국인들도 한국인처럼 육류, 해산물, 전통 음식에 관심이 많고 만족도가 높다는 것을 알 수 있음. 이를 통해 외국인 및 내국인 모두에게 좋은 평가를 받고 있는
+  식당과 음식의 공통점을 통해 관광을 즐기는 외국인들에게 관광을 더욱 즐겁게 할 수 있는 맛집 추천제를 제안함.</p>
 <br/>
 <h2 id="Reference"><mark>References</mark></h2>
 <p>

@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/quiz-main-cover.png
 navigation: True
-title: Common Sense Quiz
+title: 상식 퀴즈 어플
 date: 2020-12-30 08:00:00
 tags: [MobileApp]
 class: post-template
@@ -12,144 +12,142 @@ author: An Sung-Hyun
 ---
 
 
-<p>[MobileApp] Soft Brain Training</p>
-<p>Developed to improve the unorganized nature of quiz applications which have different fields or difficulty levels.</p>
-<h2 id="Purpose"><mark>Purpose of project development</mark></h2>
+<p>[MobileApp] 상식 퀴즈 어플 [말랑말랑 두뇌 트레이닝]</p>
+<p>다른 퀴즈 어플이나 프로그램의 체계적이지 않은 특성을 개선하고자 개발함. 분야와 난이도를 다양하게 설정이 가능하여 원하는 분야의 원하는 깊이로 학습할 수 있음</p>
+<h2 id="Purpose"><mark>개발 목적</mark></h2>
 <p><img src="assets/images/quiz-select-mode.png" width = "400" alt="select mode" /></p>
 <ul>
-  <li>The purpose is to take both learning and fun.</li>
-  <li>Common sense and many other problems are required regardless of field (except math problems including religion, science, etc.)</li>
-  <li>Used for various purposes, such as playing drinking games or building knowledge</li>
-  <li>Requires leveling, stages, difficulty functions, etc. by borrowing systems from existing puzzle games</li>
-  <li>Need supplementary means, such as hint items</li>
-  <li>All existing games are mixed with too many genres and are not common sense. You can select the genre you want, select intensively, and learn step-by-step from common sense to knowledge and experience.</li>
+  <li>궁극적인 어플의 목적은 재미와 학습을 동시에 잡는 것임</li>
+  <li>상식과 상식 외에도 많은 분야들의 지식이 요구되므로 다양하고 폭넓은 학습 가능(종교, 과학 등)</li>
+  <li>학습 외에도 술자리 게임, 내기 등 다양한 용도로 활용 가능</li>
+  <li>기존 퍼즐 게임에서 시스템을 차용하여 레벨링, 스테이지, 난이도 기능 등을 구현함</li>
+  <li>힌트 항목과 같은 보조 수단도 준비함(스태미너 등 주기적으로 회복되는 재화를 사용하여 힌트 제공)</li>
+  <li>기존의 모든 게임들은 '상식'이라는 명분 아래 너무나도 다양한 분야를 중구난방으로 섞어놓고 상식적이지 않은 것 또한 상식이라며 강요함. 이를 개선하고자 원하는 분야를
+    선택하고 집중적으로 상식이라 할만한 기초 지식부터 깊은 지식까지 차근차근 배울 수 있게 함</li>
 </ul>
 
-<h2 id="Existing App"><mark>Problems with existing apps</mark></h2>
+<h2 id="Existing App"><mark>기존 어플의 문제점</mark></h2>
 <p><img src="assets/images/quiz-existing.png" alt="existing quiz app" /></p>
 <ul>
-  <li>All existing games are mixed with too many genres and are not common sense.</li>
-  <li>UI design is not clear and content is not varied</li>
-  <li>Applications with descriptions often have unnecessarily long explanations</li>
-  <li>Overall, the design of the picture and button is not sincere</li>
-  <li>Quiz-related images often do not express the problem properly.</li>
-  <li>Poor gaming performance due to poor quality and detailed functionality overall (visual/audible effects of correct/wrong answers, buttons and problem designs, etc.)</li>
-  <li>Advertisements are constantly pop-up during game play, hurting the game's of the game.</li>
-  <li>'common sense' often not a common sense problem</li>
+  <li>기존의 모든 게임들은 너무 많은 분야의 지식이 섞여있고 상식적이지 않음</li>
+  <li>UI 디자인이 명확하지 않고 콘텐츠도 다양하지 않음</li>
+  <li>문제 해답에 대한 설명이 없는 어플도 있으며 있어도 지나치게 긴 설명을 가지는 경우가 많음</li>
+  <li>전체적으로 사진과 버튼의 디자인이 성실하지 않음</li>
+  <li>퀴즈 관련 이미지가 문제를 제대로 표현하지 못하는(관련없는) 경우가 많음</li>
+  <li>전반적인 품질 및 세부 기능이 저급하여 게임 성능 저하(정답, 오답의 시각적/청각적 효과, 버튼 및 문제 설계 등)</li>
+  <li>게임 플레이 중에 광고가 끊임없이 튀어나와 게임의 몰입을 해침</li>
+  <li>'상식'을 표방하지만 상식이 아닌 경우가 많음</li>
 </ul>
 
-<h2 id="Differentiation"><mark>Differentiation and Improvement Plan</mark></h2>
+<h2 id="Differentiation"><mark>차별성과 독창성</mark></h2>
 <ul>
-  <li>It does not mix common sense in a wide variety of fields, but it also addresses field-specific issues to focus on learning knowledge about areas of interest.</li>
-  <li>Customized education is provided by dividing the difficulty level without generalization under the name of common sense.</li>
-  <li>Handle truly 'common sense' issues unlike previous applications</li>
-  <li>Select intuitive and familiar designs with maximum care (User-Friendly)</li>
-  <li>Audible/visual effects are provided when certain events occur, such as correct/wrong answers, to facilitate distinguishing.</li>
-  <li>Problem description is divided into two parts, a summary and a detailed description, so that the user can choose.</li>
-  <li>Have ads pop up during the game and be printed on the screen in a small banner at all times to avoid interfering with the game.</li>
+  <li>완전한 기초 지식을 제외하고는 다양한 분야의 상식을 혼합하지 않았으며 관심 분야에 대한 지식을 학습하는 데 초점을 맞추기 위해 분야별로 전문화 함</li>
+  <li>상식이라는 이름 아래 난이도를 일반화하지 않고, 맞춤형 학습이 가능하도록 난이도를 분류하고 선택할 수 있게 함</li>
+  <li>기존 애플리케이션과 달리 진정한 '상식' 문제</li>
+  <li>최대한의 주의를 기울여 직관적이고 친숙한 디자인 선택(사용자 친화적)</li>
+  <li>청각/시각 효과는 정답/오답과 같은 특정 이벤트가 발생할 때 쉽게 구별할 수 있도록 제공</li>
+  <li>문제 설명은 요약과 상세 설명 두 부분으로 나눠 사용자가 선택할 수 있도록 함</li>
+  <li>게임에 방해가 되지 않도록 광고는 상시 한쪽 구석에 작은 배너로 출력</li>
 </ul>
 
-<h2 id="Design and Function"><mark>Design and Function</mark></h2>
+<h2 id="Design and Function"><mark>디자인과 기능</mark></h2>
 <h3 id="Login">Login</h3>
 <p><img src="assets/images/quiz-login.png" width = "400" alt="Quiz Login" /></p>
 <ul>
-  <li>Account: Log in with the information you entered when you joined the membership.</li>
-  <li>Login function: Link your own account or SNS account when you click Login (implement if possible)</li>
-  <li>Membership registration function: simple human information input and double check with existing accounts in the database</li>
-  <li>Guest login feature: Data is stored only on the device and all data is deleted when the application is deleted.</li>
-  <li>Change button design: When the mouse is raised, the design of the button changes to provide visual focus.</li>
-  <li>Google: Sign in with your Google account (implemented if possible)</li>
-  <li>Other SNS: Log in to the relevant SNS account (implemented if possible)</li>
+  <li>계정 : 회원 가입 시 입력한 정보로 로그인</li>
+  <li>로그인 기능 : 로그인을 클릭하면 자신의 계정 또는 SNS 계정 연결(가능한 경우 구현)</li>
+  <li>회원가입: 간단한 인적 정보 입력으로 가입이 가능하며 데이터베이스에서 기존 계정이 있는지 확인</li>
+  <li>게스트 로그인: 데이터는 단말기에만 저장되며, 응용프로그램 삭제 시 모든 데이터가 삭제됨</li>
+  <li>변경 버튼 디자인 : 마우스를 올리면 버튼의 디자인이 변경되어 시각적 초점을 제공</li>
 </ul>
 
-<h3 id="Register">Register</h3>
+<h3 id="Register">회원가입</h3>
 <p><img src="assets/images/quiz-register.png" width = "400" alt="Quiz Register" /></p>
 <ul>
-  <li>Provide ID, PASSWORD, Nickname and E-mail 4 simple information (edit text)</li>
-  <li>Register in database if ID and nickname are OK after duplicate check</li>
+  <li>ID, 비밀번호, 닉네임, 이메일 4개의 간단한 정보로 회원 가입</li>
+  <li>중복 확인 후 ID 및 닉네임이 정상일 경우 데이터베이스에 등록</li>
 </ul>
 
 <h3 id="Play">Play Frame</h3>
 <p><img src="assets/images/quiz-select-mode.png" width = "400" alt="Quiz Play Frame" /></p>
 <ul>
-  <li>Screen to choose from three: Story mode, Challenge mode, and Study mode</li>
-  <li>Story mode: Stage format due to fixed problems (common sense level of difficulty increased by phase)</li>
-  <li>Challenge mode: Select field/difficulty level and time attack to solve problems. Problem questions are random</li>
-  <li>Learning mode: After selecting a field/difficulty level, it proceeds the same as the challenge mode, but not reflected in the ranking</li>
+  <li>스토리 모드, 도전 모드 및 학습 모드 3개 중에 하나를 선택하는 화면</li>
+  <li>스토리 모드 : 고정된 문제로 출제되는 스테이지 형식(단계별로 난이도가 증가하는 방식)</li>
+  <li>도전 모드 : 분야와 난이도를 선택하여 조건에 맞는 문제들 중 랜덤으로 문제가 출제되고 시간 제한이 있음</li>
+  <li>학습 모드 : 분야/난이도 선택 후 도전 모드와 동일하게 진행되지만 랭킹에 반영되지 않음</li>
 </ul>
 
-<h3 id="Story Mode">Story Mode</h3>
+<h3 id="Story Mode">스토리 모드</h3>
 <p><img src="assets/images/quiz-story-mode.png" width = "400" alt="Quiz Story Mode" /></p>
 <ul>
-  <li>Each difficulty consists of a total of 150 sample questions, 50 sample questions.</li>
-  <li>The next stage cannot be challenged unless the previous stage has been cleared</li>
-  <li>Each stage has a fixed problem and cannot be challenged again if it has already been cleared</li>
-  <li>Story mode cannot see the commentary</li>
+  <li>각 난이도마다 50문항으로 총 150문항의 샘플 문제 구현</li>
+  <li>이전 단계를 클리어하지 못하면 다음 단계에 도전할 수 없음</li>
+  <li>각 스테이지는 고정된 문제가 출제되며 한 번 클리어하면 다시 해당 스테이지에 도전할 수 없음</li>
+  <li>스토리 모드에서는 해답에 대한 설명이나 힌트를 볼 수 없음</li>
 </ul>
 
-<h3 id="Challenge Mode">Challenge Mode</h3>
+<h3 id="Challenge Mode">도전 모드</h3>
 <p><img src="assets/images/quiz-challenge-mode.png" width = "400" alt="Quiz Challenge Mode" /></p>
 <ul>
-  <li>Select difficulty/sector</li>
-  <li>Difficulty level is common sense field. Phase 3 of upper, middle, low</li>
-  <li>Common sense problems are 50 by difficulty, a total of 150 questions.</li>
-  <li>In total, there are 10 fields, 20 questions for each field, and 200 questions for each field.</li>
-  <li>Fields: Philosophy, Religion, Psychology, Fourth Industrial Revolution, Computer Engineering, Presentation, Pure Science, Peripheral Instruments, New Cognitive Words)</li>
-  <li>Time limit present (time attack)</li>
-  <li>Time limit of 1 minute per question</li>
-  <li>Fail if you get even one question wrong</li>
+  <li>난이도와 분야를 선택</li>
+  <li>난이도는 상, 중, 하 3단계로 구성</li>
+  <li>문제는 난이도마다 50문제씩 총 150개의 샘플 문제로 구성되어 있음</li>
+  <li>총 10개 분야, 각 분야별 20문항으로 도합 200문항을 구현함</li>
+  <li>분야 : 철학, 종교학, 심리학, 4차 산업 혁명, 컴퓨터 공학, 자연 과학, 주변 기기, 신조어, 시사, 사자성어</li>
+  <li>시간 제한(타임 어택) 있음</li>
+  <li>문제당 1분의 시간 제한</li>
+  <li>하나라도 틀리면 그 즉시 도전이 중단되며 중단까지 맞춘 문제 수로 랭킹 점수 계산</li>
 </ul>
 
-<h3 id="Study Mode">Study Mode</h3>
+<h3 id="Study Mode">학습 모드</h3>
 <p><img src="assets/images/quiz-study-mode.png" width = "400" alt="Quiz Study Mode" /></p>
-<p>Mostly the same as the challenge mode, but with no time limit and can view the commentary</p>
+<p>도전 모드와 대부분 유사하지만 시간 제한이 없으며 해답에 대한 설명을 볼 수 있음</p>
 
-<h3 id="Solving">Problem Solving Screen</h3>
+<h3 id="Solving">문제 해결 화면</h3>
 <p><img src="assets/images/quiz-solution.png" width = "400" alt="Quiz Solution" /></p>
 <ul>
-  <li>Problem output (text view)</li>
-  <li>Selective Output (Radio Group – Radio Button)</li>
-  <li>multiple-choice problem</li>
+  <li>문제(text view)</li>
+  <li>선택지(Radio Group – Radio Button)</li>
+  <li>선택지는 다중으로 사지선다나 오지선다형</li>
 </ul>
 
-<h3 id="Problem description screen">Problem description screen</h3>
+<h3 id="Problem description screen">해답 설명 화면</h3>
 <p><img src="assets/images/quiz-explanation.png" width = "400" alt="Quiz Description" /></p>
 <ul>
-  <li>Change to green if correct answer is selected</li>
-  <li>Provides a summary version and detailed version of the description</li>
-  <li>1~2 lines for brief description and 1~10 lines for detailed explanation</li>
-  <li>If incorrect, change to red.</li>
+  <li>선택지가 정답일 경우 초록색 텍스트로 변경</li>
+  <li>해답에 대한 설명은 요약본과 자세한 버전 2개를 제공</li>
+  <li>1~2줄의 요약 설명과 1~10줄의 상세 설명</li>
+  <li>선택지가 오답일 경우 빨간색 텍스트로 변경</li>
 </ul>
 
-<h3 id="Profile">Profile</h3>
+<h3 id="Profile">프로필</h3>
 <p><img src="assets/images/quiz-profile.png" width = "400" alt="Quiz Profile" /></p>
-<p>Simple human information display (nickname, user unique number, current account level, number of questions solved so far, number of correct answers)</p>
+<p>간단한 인적사항 표시(닉네임, 사용자 고유번호, 현재 계정 수준, 지금까지 푼 문제 수, 정답 수)</p>
 
-<h3 id="Ranking">Ranking</h3>
+<h3 id="Ranking">랭킹</h3>
 <p><img src="assets/images/quiz-ranking.png" width = "400" alt="Quiz Ranking" /></p>
 <ul>
-  <li>Ranking only printed to top 10</li>
-  <li>Sort the number of answers stored in the database in descending order, then print out the list of 10 people at the top</li>
+  <li>랭킹은 10위까지만 출력됨</li>
+  <li>데이터베이스에 저장된 답변 수를 내림차순으로 정렬한 후 맨 위에 있는 10명의 목록을 출력</li>
 </ul>
 
-<h3 id="Select Area Screen">Select Area Screen</h3>
+<h3 id="Select Area Screen">분야 선택 화면</h3>
 <p><img src="assets/images/quiz-select-category.png" width = "400" alt="Quiz Select Category" /></p>
 <ul>
-  <li>Choose one of the 10 areas to challenge</li>
-  <li>Features supported in Study/Challenge mode</li>
+  <li>10개의 분야 중 하나 선택</li>
+  <li>해당 화면은 학습/도전 모드에서 제공됨</li>
 </ul>
 
-<h2 id="Functions"><mark>Functions</mark></h2>
+<h2 id="Functions"><mark>기능</mark></h2>
 <ol>
-  <li>Login</li>
-  <li>Membership registration</li>
-  <li>Select Mode</li>
-  <li>Story mode</li>
-  <li>Challenge mode</li>
-  <li>Study mode</li>
-  <li>Troubleshoot problems</li>
-  <li>Database connection</li>
-  <li>Ranking function</li>
-  <li>Field selection function</li>
-  <li>Design</li>
+  <li>로그인</li>
+  <li>회원 가입</li>
+  <li>스토리 모드</li>
+  <li>도전 모드</li>
+  <li>학습 모드</li>
+  <li>문제 판정</li>
+  <li>데이터베이스 연동</li>
+  <li>랭킹 기능</li>
+  <li>분야 선택에 따른 분기 기능</li>
+  <li>GUI 디자인</li>
 </ol>

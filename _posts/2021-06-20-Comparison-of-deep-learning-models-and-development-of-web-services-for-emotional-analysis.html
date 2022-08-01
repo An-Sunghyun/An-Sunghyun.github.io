@@ -12,9 +12,9 @@ author: An Sung-Hyun
 ---
 
 
-<p>[Thesis] Comparison of deep learning models and development of web services for emotional analysis</p>
-<p>[Digital Contents Society,domestic academic conferences, 119-120, 2021]</p>
-<p>Tensorflow was used for deep learning.</p>
+<p>[논문] 『감정분석을 위한 딥러닝 모델 비교 및 웹 서비스 개발』</p>
+<p>[2021 한국디지털콘텐츠학회 국내학술대회 논문자료집 pp.119~120]</p>
+<p>연구는 Python으로 진행하였고 Tensorflow, Pytorch 프레임워크가 사용됨</p>
 <h2 id="Tensorflow Result"><mark>Tensorflow Result</mark></h2>
 <h3 id="VGG16">VGG-16</h3>
 <p><img src="assets/images/VGG16.png" width = "400" alt="VGG-16" /></p>
@@ -28,24 +28,26 @@ author: An Sung-Hyun
 <p><img src="assets/images/Resnet101.jpg" width = "400" alt="Resnet101" /></p>
 
 
-<h2 id="Data Set"><mark>Data Set</mark></h2>
+<h2 id="Data Set"><mark>데이터 셋</mark></h2>
 <p><img src="assets/images/Dataset.png" alt="Dataset Example" /></p>
-<p>I used commonly used datasets for the development of sentiment analyzers. The FER-2013 Faces Database. They are approximately 29000 image data, 48x48 size and classified into seven emotions. But One emotion, disgust, has not enough images so I decided to exclude it and train AI. This is because I heard that imbalance in datasets affects accuracy.
-However, We go through the pre-process of resizing and arranging data for easy learning. Furthermore, image augmentation (zoom_range = 0.2, horizontal_flip=True, shear_range=0.2) is applied so that arbitrary data can be clearly classified.</p>
+<p>감정 분석기 개발을 위해 일반적으로 감정 분석에 사용되는 FER-2013 데이터 세트를 사용함. 48x48 크기의 대략 29000개의 이미지 데이터이며 7가지 감정으로 분류됨.
+  하지만 혐오감이라는 한 가지 감정은 이미지가 충분하지 않아 이를 배제하고 AI를 훈련시키기로 함. 데이터셋의 불균형이
+  정확성에 영향을 미친다고 들었기 때문. 쉬운 학습을 위해 데이터의 크기를 조정하고 배열하는 사전 과정을 거친 후 임의의 데이터를
+  명확하게 분류할 수 있도록 이미지 확대(dimage_range=0.2, horizontal_flip=True, shear_range=0.2)를 적용함</p>
 
-<h2 id="Face Detection"><mark>Face Detection</mark></h2>
+<h2 id="Face Detection"><mark>얼굴 인식</mark></h2>
 <p><img src="assets/images/FaceDetection.jpg" alt="Dataset Example" /></p>
-<p>I used OpenCV library to recognize faces. I just added a little code to extract the face coordinates.</p>
+<p>OpenCV 라이브러리를 사용하여 얼굴 인식 기능을 구현함. 프로젝트의 목적을 위해 인식한 얼굴 좌표를 추출하는 코드만 추가함</p>
 
-<h2 id="Demonstration View in Python"><mark>Demonstration View in Python</mark></h2>
+<h2 id="Demonstration View in Python"><mark>Python 환경에서의 시연</mark></h2>
 <p><img src="assets/images/Demonstration.png" alt="Demonstration Image" /></p>
-<p>The above photo shows the analysis result and photo printed in a Python environment in a softmax manner.</p>
+<p>위 사진은 분석 결과를 Softmax 방식으로 Python 환경에서 출력한 사진임</p>
 
-<h2 id="Conclusion"><mark>Conclusion</mark></h2>
-<p>Deep learning models implemented by tensorflow have a canonical graph, but pytorch has not. I think input shape is the main reason why pytorch didn't work properly.
-I can set input shape with tensorflow, but pytorch can't. I gathered 48X48 image data and I could set tensorflow's input shape as 48X48. But I couldn't set pytorch's
-input shape so I had no choice but to train model with 256x256 size. The data I have is 48X48, but the input shape was 256X256, so I think it cannot have been learned properly.
-VGG-16 was the best result with 89% validation acc. However, it is hard to conclude that it is the best because it is a narrow gap with densenet and resnet.</p>
+<h2 id="Conclusion"><mark>결론</mark></h2>
+<p>Tensorflow를 통해 구현된 딥 러닝 모델은 표준 그래프를 가지고 있지만 Pytorch는 그렇지 않았음. Pytorch가 제대로 작동하지 않은 주된 원인은 입력 형태라고 생각함.
+48X48 이미지 데이터를 수집했고 텐서플로우는 입력 형태를 48X48로 설정할 수 있었으나 Pytorch는 설정할 수 없었음.
+때문에 Pytorch는 형상을 입력해서 256x256 사이즈의 모델로 구축하고 학습시킬 수 밖에 없었음. 가지고 있는 데이터는 48X48인데 입력 모양이 256X256이라 제대로 학습되지 않은 것으로 추정됨.
+유효성 검사 결과 VGG-16은 89%로 최고의 결과였음. 다만 densenet과 resnet과 VGG-16은 차이가 작기 때문에 최고의 모델이라고 단정하기는 어려움</p>
 
 <h2 id="References"><mark>References</mark></h2>
 <br/>
