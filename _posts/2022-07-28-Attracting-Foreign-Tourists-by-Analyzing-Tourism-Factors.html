@@ -1,0 +1,41 @@
+---
+layout: post
+current: post
+cover:  assets/images/timeseries1.png
+navigation: True
+title: 관광 요인 분석을 통한 외래 관광객 유치 방안 제시
+date: 2022-07-28 07:00:00
+tags: [Python]
+class: post-template
+subclass: 'post'
+author: An Sung-Hyun
+---
+
+
+<p>[PYTHON] 관광 요인 분석을 통한 외래 관광객 유치 방안 제시</p>
+<p>기간 : 2021. 07. 01 ~ 2021. 7. 28</p>
+<p>업무 : 팀장 업무(스케쥴링, 업무분장 등), LGBM(머신러닝)을 활용한 관광 요인 및 재방문 요인 도출, 신뢰도 검정</p>
+</br>
+
+<h2 id="cronbach"><mark>신뢰도 검정</mark></h2>
+<p><img src="assets/images/신뢰도검정1.jpg" width = "800" alt="신뢰도 검정 데이터 전처리" /></p>
+<p>필요한 열들(분석 및 러신머닝에 사용될 컬럼)만 추출한 후 하나의 데이터 프레임으로 병합. 이상치 및 결측치 처2</p>
+<br/>
+
+<p><img src="assets/images/신뢰도검정2.jpg" width = "800" alt="신뢰도 검정 리커트 척도 변환" /></p>
+<p>신뢰도 검정을 위해서 데이터를 리커트 척도로 변환. 리커트 척도는 1~5점 설문 척도</p>
+<br/>
+
+<p><img src="assets/images/신뢰도검정3.jpg" width = "800" alt="신뢰도 검정 측정" /></p>
+<p>크론바흐 알파 계수가 0.86으로 상당히 높은 신뢰도라고 할 수 있음</p>
+<br/>
+
+<h2 id="cronbach"><mark>EDA(탐색적 데이터 분석)</mark></h2>
+<p><img src="assets/images/EDA-datapreprocess.jpg" width = "800" alt="EDA 전처리" /></p>
+<p>1차원적인 데이터 분석 및 시각화를 위한 전처리 과정. 필요한 열만 추출한 후 이상치, 결측치 처리. 그 이후 그룹 별 카운팅</p>
+<br/>
+
+<p><img src="assets/images/EDA-result1.jpg" width = "800" alt="EDA 결과1" /></p>
+<p><img src="assets/images/EDA-result2.jpg" width = "800" alt="신뢰도 검정 데이터 전처리" /></p>
+<p>Plotly 라이브러리를 활용하여 대화형 시각화</p>
+<br/>
