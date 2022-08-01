@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/chat-main-title.jpg
 navigation: True
-title: Chat Program
+title: 채팅 프로그램
 date: 2019-09-10 08:00:00
 tags: [JAVA]
 class: post-template
@@ -12,27 +12,27 @@ author: An Sung-Hyun
 ---
 
 
-<p>[JAVA] Chat program using socket communication</p>
-<p>It is a chat program based on Java and it is implemented by utilizing all basic Java technology such as linking database, community and so on.</p>
+<p>[JAVA] 소켓 통신을 활용한 채팅 프로그램</p>
+<p>자바 기반의 채팅 프로그램으로 소켓 통신, 데이터베이스 연동, 커뮤니티 기능 등 기본적인 자바 기술을 대거 활용해 구현함</p>
 <h2 id="Main frame"><mark>Main Frame</mark></h2>
 <p><img src="assets/images/chat-main2.jpg" alt="Main frame img" /></p>
-<p>On the main screen, you can chat with other users, and it also provides functions such as changing the color of the background screen and checking current contact list.</p>
+<p>메인 화면에서는 다른 사용자와 채팅할 수 있으며, 배경 색상을 변경하거나 현재 연락처 목록 확인 등의 기능을 제공함</p>
 
 <h2 id="Class diagram"><mark>Class diagram</mark></h2>
 <p><img src="assets/images/chat-classdiagram.png" alt="chat class diagram img" /></p>
-<p>This class diagram shows how Java classes within the program are linked.</p>
+<p>위 클래스 다이어그램은 프로그램 내 Java 클래스가 어떻게 연결되어 있는지 관계성을 표현함</p>
 
 <h2 id="Database"><mark>Database</mark></h2>
 <p><img src="assets/images/chat-database.png" alt="chat database img" /></p>
-<p>The database basically has member information. Through this, members' personal information such as name, ID, password will be managed, and Java will link them through certain Java classes..</p>
-<p>It implements basic community functions such as genuine registration, login, and membership.</p>
+<p>데이터베이스에는 기본적으로 구성원 정보 데이터를 적재함. 이를 통해 회원들의 이름, 아이디, 비밀번호 등의 개인정보가 관리되고 특정 자바 클래스를 통해 DB와 연동하여 데이터를 활용함</p>
+<p>정품 등록, 로그인, 멤버쉽 등의 기본적인 커뮤니티 기능도 구현하였으며 해당 기능을 위한 데이터 관리도 구현함</p>
 
 <h2 id="Setting Background Color"><mark>Setting Background Color</mark></h2>
 <p><img src="assets/images/chat-background.jpg" alt="background color img" /></p>
-<p>On this frame, you can select background via file chooser or just apply random color.</p>
-<p>If you choose random color, the color of background will change randomly.</p>
+<p>위 화면에서는 파일 선택기를 통해 배경을 선택하거나(본인이 가지고 있는 이미지) 무작위로 단색을 적용할 수 있음</p>
+<p>랜덤 색상을 선택하면 랜덤으로 채팅창의 배경 색상이 변하게 됨</p>
 
 <h2 id="Checking Current Users"><mark>Checking Current Users</mark></h2>
 <p><img src="assets/images/chat-currentuser.jpg" alt="current user img" /></p>
-<p>On this screen, you can see the list of users currently logged on.</p>
-<p>Originally, I wanted to add whispering functions by linking them, but I was not able to implement them due to lack of capability.</p>
+<p>위 화면에서 사용자는 현재 접속 중인 다른 사용자의 목록을 확인할 수 있음</p>
+<p>원래는 사용자들을 연결하여 귓속말 기능(1:1 통신)을 추가하고 싶었으나, 역량이 부족하여 구현하지 못함</p>

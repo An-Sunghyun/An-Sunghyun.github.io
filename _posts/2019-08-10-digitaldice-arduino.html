@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/digitaldice-main.png
 navigation: True
-title: Digital Dice
+title: 전자 주사위
 date: 2019-08-10 08:00:00
 tags: [ARDUINO]
 class: post-template
@@ -12,23 +12,21 @@ author: An Sung-Hyun
 ---
 
 
-<p>[ARDUINO] Digital Dice for fun!</p>
-<p>This digital dice was made for play and education. Because it was the first time using Arduino, its completeness is somewhat insufficient.</p>
-<h2 id="initial design"><mark>Initial design</mark></h2>
+<p>[ARDUINO] 전자 주사위</p>
+<p>본 전자 주사위는 각종 놀이(술자리 게임, 보드게임 등)과 교육용으로 만들었음. 아두이노를 처음 사용해보았기 때문에 완성도는 다소 떨어짐.</p>
+<h2 id="initial design"><mark>초기 디자인/mark></h2>
 <p><img src="assets/images/digitaldice-design.png" alt="initial design img" /></p>
-<p>The picture above is an early design and wanted to give a different charm while imitating the existing design of the dice.</p>
+<p>위의 사진은 초기 디자인으로 기존의 주사위 디자인을 모방하면서도 색다른 매력을 주고 싶었음</p>
 
-<h2 id="Circuit design"><mark>Circuit design</mark></h2>
+<h2 id="Circuit design"><mark>회로 설계</mark></h2>
 <p><img src="assets/images/digitaldice-circuitdesign.png" alt="Circuit design1" /></p>
 <p><img src="assets/images/digitaldice-circuitdesign2.png" alt="Circuit design2" /></p>
-<p>The dice is designed to allow users to set the maximum value at their disposal and to be used for various games.</p>
+<p>주사위는 사용자가 원하는 최댓값을 설정하여 다양한 게임에서 적절하게 사용할 수 있도록 설계됨</p>
 
 
-<h2 id="result"><mark>Result</mark></h2>
+<h2 id="result"><mark>결과</mark></h2>
 <p><img src="assets/images/digitaldice-result.png" alt="result img" /></p>
-<p>As a result, all four of the initially planned functions were implemented.</p>
-<p>As I said early, it is designed to allow users to set the maximum value at their disposal and to be used for various games.
-The value of the dice is randomly output, and when the set maximum value is output, the LED turns on repeatedly and the sound is
-output.That's why users can easily figure out that the maximum value has been reached, and I think this fits well with the games
-they usually play at drinking parties.</p>
-<p>It can also be used for educational purposes such as basic arduino utilization and learning the right play culture. </p>
+<p>결과적으로는 초기에 계획했던 4가지 주요 기능은 모두 구현함</p>
+<p>앞에서 언급한대로 최댓값을 마음대로 설정하고 다양한 게임에서 활용할 수 있도록 구현함. 주사위 값은 무작위로 출력되며 난수이므로 확률은 모두 동일함. 설정된 최댓값이 출력되면 LED가
+반복적으로 켜지고 소리가 출력되는 소소한 이벤트 효과도 구현함. 해당 이벤트 효과로 사용자들은 쉽게 최대치가 나왔음을 알 수 있고, 술자리 같이 분위기가 중요한 곳에서 게임을 즐길 때 효과적이라고 생각함</p>
+<p>기본적인 아두이노 활용과 올바른 놀이 문화 학습 등 교육적인 목적에도 사용될 수 있음</p>
