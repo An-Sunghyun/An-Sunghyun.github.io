@@ -17,9 +17,18 @@ author: An Sung-Hyun
 <p>업무 : 팀장 업무(스케쥴링, 업무분장 등), LGBM(머신러닝)을 활용한 관광 요인 및 재방문 요인 도출, 신뢰도 검정</p>
 </br>
 
+<h2 id="Dataset"><mark>사용 데이터 셋</mark></h2>
+<p><img src="assets/images/attract-dataset.png" width = "800" alt="데이터셋 목록표" /></p>
+<p>공공기관에서 제공하는 공공데이터 활용</p>
+<br/>
+
+<h2 id="Dataset"><mark>프로젝트 진행 절차</mark></h2>
+<p><img src="assets/images/attract-process.png" width = "800" alt="진행 절차 도식화" /></p>
+<br/>
+
 <h2 id="cronbach"><mark>신뢰도 검정</mark></h2>
 <p><img src="assets/images/신뢰도검정1.jpg" width = "800" alt="신뢰도 검정 데이터 전처리" /></p>
-<p>필요한 열들(분석 및 러신머닝에 사용될 컬럼)만 추출한 후 하나의 데이터 프레임으로 병합. 이상치 및 결측치 처2</p>
+<p>필요한 열들(분석 및 러신머닝에 사용될 컬럼)만 추출한 후 하나의 데이터 프레임으로 병합. 이상치 및 결측치 처리</p>
 <br/>
 
 <p><img src="assets/images/신뢰도검정2.jpg" width = "800" alt="신뢰도 검정 리커트 척도 변환" /></p>
@@ -38,4 +47,64 @@ author: An Sung-Hyun
 <p><img src="assets/images/EDA-result1.jpg" width = "800" alt="EDA 결과1" /></p>
 <p><img src="assets/images/EDA-result2.jpg" width = "800" alt="신뢰도 검정 데이터 전처리" /></p>
 <p>Plotly 라이브러리를 활용하여 대화형 시각화</p>
+<br/>
+
+<h2 id="LGBM"><mark>LGBM(머신러닝)</mark></h2>
+<p>LGBM은 머신러닝의 일종으로 빠른 처리속도가 특징과 그만큼 쉽게 과적합되는 것이 특징인 모델</p>
+
+<p><img src="assets/images/LGBMpreprocess1.jpg" width = "800" alt="LGBM 데이터 전처리1" /></p>
+<p>머신러닝 모델 구축에 사용할 컬럼들 추출</p>
+<br/>
+
+<p><img src="assets/images/LGBMpreprocess2.jpg" width = "800" alt="LGBM 데이터 전처리2" /></p>
+<p>추후 시각화를 위해 컬럼명 변경</p>
+<br/>
+
+<p><img src="assets/images/LGBMpreprocess3.jpg" width = "800" alt="LGBM 데이터 전처리3" /></p>
+<p>설문 조사 데이터를 원활하게 활용할 수 있도록 리커트 척도로 변환</p>
+<br/>
+
+<p><img src="assets/images/LGBM-Model.jpg" width = "800" alt="LGBM 모델 구축" /></p>
+<p>리커트 척도로 변환한 각 관광 요인(혹은 재방문 요인)을 입력으로, 출력을 전반적 만족도 컬럼으로 한 모델 구축</p>
+<br/>
+
+<p><img src="assets/images/LGBM-verify.jpg" width = "800" alt="LGBM 모델 검증" /></p>
+<p>구축한 모델의 성능을 검증. 학습 및 검증 비율은 7:3 혹은 8:2로 정확도 향상에 따라 달라질 수 있음</p>
+<br/>
+
+<p><img src="assets/images/LGBM-result1.jpg" width = "800" alt="LGBM 결과" /></p>
+<p>구축한 모델에서 각 변수(요인들) 중요도를 시각화하여 중요한 관광 요인(혹은 재방문 요인)을 도출</p>
+<br/>
+
+<p><img src="assets/images/LGBM-result2.jpg" width = "800" alt="LGBM 결과 요약" /></p>
+<p>도합 12개 모델의 결과를 요약</p>
+<br/>
+
+<h2 id="TimeSeries"><mark>시계열 분석</mark></h2>
+<p>향후 외래관광객 추이를 파악하고 대략적인 관광객 수를 추측. 새롭게 제안할 정책/사업/서비스 등의 규모 설정에 결과를 활용할 수 있음</p>
+
+<p><img src="assets/images/Timeseries-model.jpg" width = "800" alt="시계열 모델 구축" /></p>
+<p>시계열 분석은 Facebook의 fbprophet을 사용. 2019년 자료를 제외한 2005년~2018년 데이터로 학습. 2020~2021은 코로나 기간으로 제외</p>
+<br/>
+
+<p><img src="assets/images/Timeseries-result2.png" width = "800" alt="시계열 분석 결과 추이" /></p>
+<p>향후 3년간 외래관광객 추이는 증가세</p>
+<br/>
+
+<p><img src="assets/images/Timeseries-result1.png" width = "800" alt="시계열 분석 결과" /></p>
+<p>2022년 외래관광객 수는 대략 약 1847만 ±1093610명. 오차 범위 약 ±6</p>
+<br/>
+
+<h2 id="Project-Result"><mark>활용 방안</mark></h2>
+<p>위 단계들을 통해 관광 요인과 재방문 요인 모두 제일 영향력이 큰 요인이 '식도락 관광(맛집 탐방)'임을 알 수 있었음. 식도락 관광에 신규 사업/정책/서비스를 투자하는 것이 제일 효율적이라고 판단할 수 있음</p>
+
+<p><img src="assets/images/restaurantguide.png" width = "800" alt="공통 맛집 추천 시스템" /></p>
+<p>외국인과 한국인이 선호하는 식재료, 맛이 다르다는 선행 연구들을 참고하여 자국민과 외국인 모두가 공통적으로 호평한 식당을 추천하는 시스템 제안</p>
+<br/>
+
+<p><img src="assets/images/attract-descrip1.png" width = "800" alt="핵심 설명" /></p>
+<p><img src="assets/images/attract-descrip2.png" width = "800" alt="제공 부가정보" /></p>
+<br/>
+
+<p><img src="assets/images/attract-effect.png" width = "800" alt="기대효과" /></p>
 <br/>
