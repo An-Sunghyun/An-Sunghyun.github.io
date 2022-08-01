@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/sf-main.jpg
 navigation: True
-title: Safe Distance Smartphone Case
+title: 안전 거리 유지 스마트폰 케이스
 date: 2020-05-30 08:00:00
 tags: [Labview]
 class: post-template
@@ -12,32 +12,42 @@ author: An Sung-Hyun
 ---
 
 
-<p>[Labview] Safe Distance Smartphone Case</p>
-<p>As the penetration rate of smartphones has increased in modern society, many people walk while looking at smartphones.</p>
-<p>As such people experience crashes, the traffic accident rate is on the rise.So I made a smartphone case that could detect danger while looking at Smartphone.</p>
-<p>Due to poor conditions, it was not implemented as a physical device and was implemented only in software.</p>
+<p>[Labview] 안전 거리 유지 스마트폰 케이스</p>
+<p>현대 사회에서는 스마트폰의 보급률이 높아지면서 스마트폰을 보며 걸어다니는 사람들이 급증하게 됨</p>
+<p>이런 사람들로 인해 교통사고율이 높아지는 추세임. 그래서 스마트폰을 보면서 위험을 감지할 수 있는 스마트폰 케이스를 만들어보고자 함</p>
+<p>코로나로 인한 열악한 조건(온라인) 때문에 하드웨어는 구현하지 않았고 소프트웨어만 구현하게 됨</p>
 <h2 id="Front Panel"><mark>Front Panel</mark></h2>
-<p>The database basically has member information and CD key information. Through this, members' personal information, scores, and records will be managed, and Java will link them through certain Java classes.</p>
+<p>실제 하드웨어까지 구현했다면 다른 모습이었겠지만 소프트웨어만 구현했기 때문에 디자인이 상당히 달라짐. 보는 바와 같이 센서(가정)가 인식하는 거리가 출력되며 현재 속력과 위험 등급 등의 정보를 출력함</p>
 <p><img src="assets/images/sf-front.jpg" alt="Front Panel img" /></p>
-<p>It implements basic community functions such as genuine registration, login, and membership.</p>
+<p>위험 등급은 거리에 따라 다르며 충돌 사고가 발생할 위험이 있을 경우 소프트웨어에서는 화려한 LED 점등의 반복과 소리 출력 등의 경고 이벤트가 발생함</p>
 
 <h2 id="Block Diagram"><mark>Block Diagram</mark></h2>
 <p><img src="assets/images/sf-blockdiagram.jpg" alt="blockdiagram img" /></p>
-<p>The picture above is block diagram of this program. It has a total of five functions: distance measurement, hazard classification, warning tone output, vibration, and warning statement output.</p>
-<strong><mark>Functions</mark></strong>
+<p>위 사진은 프로그램의 블록 다이어그램으로 거리 측정, 위험 분류, 경고 이벤트(경고 팝업 알림, 경고음 출력, 진동 등) 등의 기능을 구현함</p>
+<strong><mark>주요 기능</mark></strong>
 <ul>
-  <li>Distance Measurement</li>
-  <li>Hazard Classification</li>
-  <li>Warning Tone Output</li>
-  <li>Warning Statment Output</li>
-  <li>Vibration function</li>
+  <li>실시간 거리 측정</li>
+  <li>위험 등급 분류</li>
+  <li>경고음 출력</li>
+  <li>경고 팝업창 출력</li>
+  <li>경고 알림용 진동 기능</li>
+  <li>위험 등급 화면 출력</li>
 </ul>
-<p>Each function has been implemented software-only.</p>
+<p>각 기능은 소프트웨어로만 구현되었으며 SW를 산정한 방식으로 구현함. 즉, 하드웨어까지 고려했다면 방식과 디자인이 달라졌을 것</p>
 
 <h2 id="Result"><mark>Result</mark></h2>
 <p><img src="assets/images/sf-result.png" alt="result img" /></p>
-<p>Distance measurements were implemented by entering values as if reading sensor values in real time.
-So it will make person feel as if a person was walking away and getting closer to obstacles.</p>
-<p>Depending on the measured distance values, the hazard is classified into four levels of very dangerous, dangerous, careful and safe.</p>
-<p>At the very dangerous stage, warning statements and warning tones are output, and LEDs attached to the case repeatedly illuminate to indicate the danger visually and audibly.</p>
-<p>At the dangerous stage, a warning statement is printed with vibration to alert the user of the risk. </p>
+<p>거리 측정은 센서 값을 실시간으로 읽는 것처럼 연속적인 값이 자동으로 입력되게 구현함(시뮬레이션용 프로그램과 유사). 때문에 실제로 사람이 걷다가 충돌 위험물에 근접해지는 듯한 상황을 연출할 수 있었음</p>
+<p>측정된 거리 값에 따라 매우 위험, 위험, 주의 및 안전 4가지 위험 수준으로 분류됨</p>
+<p>매우 위험 단계에서는 경고문과 경고음 출력 등 경고 이벤트에 해당하는 모든 기능이 작동하며 케이스에 부착된 LED까지 점등함으로써 시각적, 청각적인 경고를 모두 주게 됨</p>
+<p>위험 단계에서는 사용자에게 위험을 경고하기 위해 진동과 함께 스마트폰 화면에 경고 팝업창을 출력함</p>
+
+<h2 id="Functions"><mark>주요 기술</mark></h2>
+<ul>
+  <li>팝업 출력</li>
+  <li>소리 출력</li>
+  <li>이벤트 처리</li>
+  <li>실시간 변동</li>
+  <li>LED 조작</li>
+  <li>기초 기술(조건, 반복 등)</li>
+</ul>

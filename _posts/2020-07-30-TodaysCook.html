@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/cook-main-cover.png
 navigation: True
-title: Today's Cook
+title: 오늘의 요리사
 date: 2020-07-30 08:00:00
 tags: [Website]
 class: post-template
@@ -12,11 +12,11 @@ author: An Sung-Hyun
 ---
 
 
-<p>[Website] Today's Cook</p>
-<p>Sites where you can search for recipes through your current ingredients or get menu recommendations through fragmentary conditions for what you want to eat.</p>
-<p>In addition, you can search for detailed information about each food.</p>
+<p>[Website] 오늘의 요리사</p>
+<p>자신이 현재 가지고 있는 식재료 정보를 입력하여 만들 수 있는 요리의 레시피를 검색하거나 자신이 먹고 싶은 것의 단편적인 정보(조건)로 메뉴 추천을 받을 수 있는 사이트</p>
+<p>또한 각 음식에 대한 상세 정보(칼로리 등)를 검색할 수 있음</p>
 <h2 id="Design"><mark>Design</mark></h2>
-<p>All design components were made directly through Photoshop.</p>
+<p>각 디자인 컴포넌트는 모두 포토샵을 활용해 제작함</p>
 
 <h3 id="Main Cover Image">Main Cover</h3>
 <p><img src="assets/images/cook-main-cover.png" alt="Cook main cover img" /></p>
@@ -24,11 +24,11 @@ author: An Sung-Hyun
 <h3 id="Navbar">Navbar</h3>
 <p><img src="assets/images/cook-navbar.jpg" alt="Cook navbar img" /></p>
 <ol>
-<li>Home logo: Go to main page</li>
-<li>Cooking search: Go to the main page search window</li>
-<li>Recommend recipe: Go to the recipe search page</li>
-<li>Menu Recommendation: Go to Menu Search page</li>
-<li>Design: Implemented responsively using CSS</li>
+<li>Home logo: 메인 페이지로 이동</li>
+<li>Cooking search: 메인 페이지의 검색창으로 이동</li>
+<li>Recommend recipe: 레시피 검색 페이지로 이동</li>
+<li>Menu Recommendation: 메뉴 검색 페이지로 이동</li>
+<li>Design: CSS를 사용해 디자인 함</li>
 </ol>
 <h3 id="Main page">Main Page</h3>
 <p><img src="assets/images/cook-main.jpg" alt="Cook main img" /></p>
@@ -36,111 +36,121 @@ author: An Sung-Hyun
 <h3 id="Today Recommend">Today's Recommend</h3>
 <p><img src="assets/images/cook-recommend.jpg" alt="Cook Recommned img" /></p>
 <ol>
-<li>Today's recommended menu: Select one randomly from the menu and print out the information</li>
-<li>Today's recommended recipe: Select one randomly from the recipe and print out the information</li>
+<li>오늘의 추천 메뉴 : 메뉴에서 임의로 하나를 선택하여 화면에 정보를 출력함</li>
+<li>오늘의 추천 레시피 : 레시피에서 임의로 하나를 선택하여 화면에 정보를 출력함</li>
 </ol>
 
-<h3 id="Main page bottom Button">Main Page Bottom Button</h3>
+<h3 id="Main page bottom Button">메인 페이지 하부 버튼</h3>
 <p><img src="assets/images/cook-button.jpg" alt="Cook button img" /></p>
 <ol>
-<li>Menu Recommendation Button: Go to Menu Search page</li>
-<li>Recommend recipe button: Go to the recipe search page</li>
-<li>Design: CSS is used to produce a reactive type. Apply Hover Effect</li>
+<li>메뉴 추천 버튼 : 메뉴 검색 페이지로 이동</li>
+<li>레시피 추천 버튼 : 레시피 검색 페이지로 이동</li>
+<li>Design: Hover를 사용하여 반응형 버튼으로 구현함</li>
 </ol>
 
-<h3 id="Main page Search">Main Page Search</h3>
+<h3 id="Main page Search">메인 페이지 검색창</h3>
 <p><img src="assets/images/cook-food-search.jpg" alt="Cook food search img" /></p>
 <ol>
-<li>Write the name of the food correctly</li>
-<li>Go to the food search results page and print the results</li>
-<li>Search the database and print the name, unit calories, taste, and section information in the form of photos and tables.</li>
+<li>정확하게 검색하고자 하는 음식으ㅡㄹ 입력</li>
+<li>음식 검색 결과 페이지로 이동하여 자세한 결과 출력</li>
+<li>데이터베이스에서 해당 음식을 검색한 후 이름, 단위 칼로리, 섹션 정보를 사진과 표 형식으로 출력함</li>
 </ol>
 
-<h3 id="Menu Search">Menu Search</h3>
+<h3 id="Menu Search">메뉴 검색</h3>
 <p><img src="assets/images/cook-menu-search.jpg" alt="Cook menu search img" /></p>
 <ol>
-<li>Conditions of selection are implemented as radio boxes (single selection)</li>
-<li>Go to the Menu Search Results page through the Submit button</li>
-<li>Insert the selected item as a variable value into the SQL statement and search the database</li>
-<li>Today's recommended menu/recipe information is displayed on the right side</li>
+<li>선택 조건은 라디오 박스로 구현함(단일 선택)</li>
+<li>Submit 버튼을 클릭하면 결과 페이지로 이동함</li>
+<li>선택된 항목을 SQL문에 변수 값으로 삽입하고 데이터베이스에서 검색함</li>
+<li>오늘의 추천 메뉴/레시피 항목은 우측에서도 출력됨</li>
 </ol>
 
-<h3 id="Recipe Search">Recipe Search</h3>
+<h3 id="Recipe Search">레시피 검색</h3>
 <p><img src="assets/images/cook-recipe-search.jpg" alt="Cook recipe search img" /></p>
 <ol>
-<li>Implementation of selection conditions with check boxes (multiple selections, up to eight selections are limited)</li>
-<li>Use the Submit button to go to the recipe search results page.</li>
-<li>Insert the selected item as a variable value into the SQL statement and search the database</li>
-<li>Today's recommended menu/recipe information is displayed on the right side</li>
+<li>체크 박스를 사용하여 선택 조건 구현(최대 8개 복수 선택 가능)</li>
+<li>Submit 버튼을 클릭하면 결과 페이지로 이동</li>
+<li>선택된 항목을 SQL문에 변수 값으로 삽입하고 데이터베이스에서 검색함</li>
+<li>오늘의 추천 메뉴/레시피 항목은 우측에서도 출력됨</li>
 </ol>
 
-<h3 id="Food Search Result">Food Search Result</h3>
+<h3 id="Food Search Result">음식 검색 결과</h3>
 <p><img src="assets/images/cook-food-search-result.jpg" alt="Cook food search result img" /></p>
 <ol>
-<li>Information about the food searched</li>
-<li>Information on food names, calories per unit, taste, and large category is displayed.</li>
-<li>Information is expressed in a table format.</li>
-<li>Printed with photos for visual effects</li>
-<li>Today's recommended menu/recipe information is displayed on the right side.</li>
+<li>찾아낸 음식 상세 정보를 출력함</li>
+<li>음식 이름, 단위 칼로리, 맛, 대분류에 대한 정보가 표시됨</li>
+<li>정보는 표 형식으로 표현</li>
+<li>시각적인 효과를 위해 사진과 함께 정보가 출력됨</li>
+<li>오늘의 추천 메뉴/레시피 항목은 우측에서도 출력됨</li>
 </ol>
 
-<h3 id="Menu Search Result">Menu Search Result</h3>
+<h3 id="Menu Search Result">메뉴 검색 결과</h3>
 <p><img src="assets/images/cook-menu-search-result.jpg" alt="Cook menu search result img" /></p>
 <ol>
-<li>Search the database via SQL statements using the conditions entered on the Menu Search page.</li>
-<li>Select up to three results that meet the conditions and print them out in the form of a card title.</li>
-<li>At the bottom, go to the relevant search page through the menu re-search and recipe re-search buttons.</li>
+<li>메뉴 검색 페이지에 입력한 조건을 사용하여 SQL 문을 통해 데이터베이스에서 검색</li>
+<li>조건에 맞는 결과를 최대 3개까지 선택하여 카드 형태로 출력</li>
+<li>하단의 메뉴 재검색 및 레시피 재검색 버튼을 통해 검색 페이지로 이동 가능</li>
 </ol>
 
-<h3 id="Recipe Search Result">Recipe Search Result</h3>
+<h3 id="Recipe Search Result">레시피 검색 결과</h3>
 <p><img src="assets/images/cook-recipe-search-result.jpg" alt="Cook recipe search result img" /></p>
 <ol>
-<li>Search the database via SQL statements using the conditions entered on the Recipe Search page.</li>
-<li>Select up to three results that meet the conditions and print them out in the form of a card title.</li>
-<li>In the recipe results, click on the results and link them to the recipe site related to the dish.</li>
-<li>Go to the search page at the bottom through the 'Rescan Menu' and 'Rescan Recreate Recipe' buttons</li>
+<li>레시피 검색 페이지에 입력한 조건을 사용하여 SQL 문을 통해 데이터베이스에서 검색</li>
+<li>조건에 맞는 결과를 최대 3개까지 선택하여 카드 형태로 출력</li>
+<li>레시피 결과에서 결과를 클릭하여 요리와 관련된 레시피 사이트로 연결</li>
+<li>하단의 메뉴 재검색 및 레시피 재검색 버튼을 통해 검색 페이지로 이동 가능</li>
 </ol>
 
 <h2 id="Backend"><mark>Backend</mark></h2>
-<h3 id="Search Func Backend">Search Function</h3>
+<h3 id="Search Func Backend">검색 기능</h3>
 <ol>
-<li>Enter the name of the food you want to search for in the search window on the main page and click the Enter or Submit button.</li>
-<li>Invoke the corresponding Result Servlet as the event occurred</li>
-<li>Servlet extracts the name of food entered in the search box with data and calls DAO through Service</li>
-<li>Request that the recalled DAO search the database for the name of the food received as data in SQL statements.</li>
-<li>If data of that food name exists in the database, the database sends it to DAO.</li>
-<li>Return transmitted food data to a servlet by storing it in the DAO's list using ArrayList</li>
-<li>Visualize search results by invoking the results screen JSP for the function that corresponds with the returned list</li>
+<li>메인 페이지의 검색 창에 검색할 음식 이름을 입력하고 입력 또는 제출 버튼을 클릭</li>
+<li>이벤트 발생 시 해당 결과 서블릿 호출</li>
+<li>서블릿은 검색창에 입력된 음식의 이름을 데이터로 추출하여 서비스를 통해 DAO를 호출함</li>
+<li>리콜된 DAO가 SQL 문에서 데이터로 수신한 식품의 이름을 데이터베이스에서 검색하도록 요청</li>
+<li>만약 그 음식 이름의 데이터가 데이터베이스에 존재한다면, 데이터베이스는 DAO로 해당 정보를 전송함</li>
+<li>수신된 데이터는 DAO의 ArrayList 목록에 저장되고 서블릿으로 반환</li>
+<li>반환된 목록에 해당하는 함수를 호출하고 해당 함수에 대한 결과 화면 JSP를 호출하여 검색 결과 시각화</li>
 </ol>
 
-<h3 id="Menu Search Recommend Function">Menu Search Recommend Function</h3>
+<h3 id="Menu Search Recommend Function">메뉴 검색 추천 기능</h3>
 <ol>
-<li>Go to the Select Menu Recommendation Criteria page through the menu recommendation button, etc.</li>
-<li>Select a filter through the radio button and click the search button</li>
-<li>Invoke the corresponding MenuResult Servlet as an event occurred</li>
-<li>The servlet extracts data from selected conditions and calls the DAO through the service.</li>
-<li>Request the database to search for conditions received by the invoked DAO in SQL statements</li>
-<li>If data corresponding to the conditional data exists in the database, the database sends it to DAO.</li>
-<li>Data received is stored in the DAO's ArrayList list and returned as a servlet</li>
-<li>Visualize search results by invoking the results screen JSP of the function that corresponds to the returned list.</li>
+<li>메뉴 추천 버튼 등을 통해 메뉴 추천 기준 선택 페이지로 이동</li>
+<li>라디오 버튼을 통해 필터를 선택하고 검색 버튼을 클릭</li>
+<li>이벤트 발생 시 해당 MenuResult 서블릿 호출</li>
+<li>서블릿은 선택된 조건에서 데이터를 추출하고 서비스를 통해 DAO를 호출</li>
+<li>SQL 문에서 호출된 DAO가 수신한 조건을 검색하도록 데이터베이스 요청</li>
+<li>조건 데이터에 해당하는 데이터가 데이터베이스에 있는 경우, 데이터베이스는 DAO로 데이터를 전송</li>
+<li>수신된 데이터는 DAO의 ArrayList 목록에 저장되고 서블릿으로 반환</li>
+<li>반환된 목록에 해당하는 함수를 호출하고 해당 함수에 대한 결과 화면 JSP를 호출하여 검색 결과 시각화</li>
 </ol>
 
-<h3 id="Recipe Search Recommend Function">Recipe Search Recommend Function</h3>
+<h3 id="Recipe Search Recommend Function">레시피 검색 추천 기능</h3>
 <ol>
-<li>Go to the Select Recipe Recommendation Criteria page through the recipe recommendation button, etc.</li>
-<li>Select duplicate selections (up to 8) for Checkbox and click the Search button.</li>
-<li>Invoke the corresponding RecipeResult Servlet as an event occurred</li>
-<li>The servlet extracts data from selected conditions and calls the DAO through the service.</li>
-<li>Request the database to search for conditions received by the invoked DAO in SQL statements</li>
-<li>If the data corresponding to the conditional data resides in the database, the database sends it to DAO.</li>
-<li>Data received is stored in the DAO's ArrayList list and returned as a servlet</li>
-<li>Visualize search results by invoking the results screen JSP of the function that corresponds to the returned list.</li>
+<li>레시피 추천 버튼 등을 통해 레시피 추천 기준 선택 페이지로 이동</li>
+<li>체크 박스에 대해 중복 선택 항목(최대 8개)을 선택하고 검색 버튼을 클릭</li>
+<li>이벤트가 발생하면 해당 RecipeResult 서블릿을 호출</li>
+<li>서블릿은 선택된 조건에서 데이터를 추출하고 서비스를 통해 DAO를 호출</li>
+<li>SQL 문에서 호출된 DAO가 수신한 조건을 검색하도록 데이터베이스 요청</li>
+<li>조건 데이터에 해당하는 데이터가 데이터베이스에 있는 경우, 데이터베이스는 DAO로 데이터를 전송</li>
+<li>수신된 데이터는 DAO의 ArrayList 목록에 저장되고 서블릿으로 반환</li>
+<li>반환된 목록에 해당하는 함수를 호출하고 해당 함수에 대한 결과 화면 JSP를 호출하여 검색 결과 시각화</li>
 </ol>
 
-<h3 id="Todays Recommend Function">Today's Recommend Function</h3>
+<h3 id="Todays Recommend Function">오늘의 추천 기능</h3>
 <ol>
-<li>When the main page opens, back-end automatically requests a random search and transfer of one menu/recipe data from the database.</li>
-<li>Transferring menus/rescriptions from the database to the backend one by one</li>
-<li>Store data sent in a back-end, ArrayList-enabled list, and time-racked data</li>
-<li>On each page with today's recommended card side, data stored in the list is inserted as a result to visualize the results.</li>
+<li>메인 페이지가 열리면 백엔드는 데이터베이스에서 하나의 메뉴/레시피 데이터에 대한 임의 검색 및 전송을 자동으로 요청</li>
+<li>데이터베이스에서 백엔드로 메뉴/스크립션을 하나씩 전송e</li>
+<li>전송된 데이터를 백엔드, ArrayList에 담을 수 있는 리스트 및 시간 추적 데이터로 저장</li>
+<li>오늘의 추천 카드 측면이 있는 각 페이지에는 결과에 따라 목록에 저장된 데이터가 삽입되어 결과를 시각화할 수 있음</li>
 </ol>
+
+<h2 id="Functions"><mark>주요 기술</mark></h2>
+<ul>
+  <li>웹 개발 전반(페이지 이동, 이벤트 처리, 디자인 등)</li>
+  <li>데이터베이스 전반</li>
+  <li>실시간 이벤트 처리</li>
+  <li>실시간 변동</li>
+  <li>LED 조작</li>
+  <li>기초 기술(조건, 반복 등)</li>
+</ul>
