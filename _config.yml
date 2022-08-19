@@ -15,7 +15,7 @@ cover: assets/images/blog-cover.jpg
 logo: assets/images/An Sung-Hyun.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-CNAME: King-Otaku
+CNAME: An-Sunghyun
 
 # Social info
 navigation: True # show the navbar links
@@ -27,7 +27,7 @@ facebook: swanm13
 
 # Disqus
 disqus: True
-disqus_shortname: https-king-otaku-github-io
+disqus_shortname: https-an-sunghyun-github-io
 
 # Google Analytics
 google_analytics: UA-168144598-1
@@ -67,8 +67,8 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: King-Otaku
-repo: https://github.com/King-Otaku/King-Otaku.github.io
+username: An-Sunghyun
+repo: https://github.com/An-Sunghyun/An-Sunghyun.github.io
 branch: master
 relative_source: ../jasper2/
 destination: ../jasper2-pages/
